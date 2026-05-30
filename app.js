@@ -163,9 +163,33 @@
 
   /* ---------- LMS Bridge: animation is pure CSS (course packet travels the rail) ---------- */
 
-  /* ---------- mobile burger (simple) ---------- */
-  const burger = document.querySelector('.burger');
-  if (burger) burger.addEventListener('click', () => {
-    document.querySelector('.nav-links').style.display = 'flex';
-  });
+  /* ---------- mobile burger — slide-in drawer ---------- */
+  (function () {
+    const burger = document.querySelector('.burger');
+    if (!burger) return;
+
+    // inject drawer HTML once
+    const drawer = document.createElement('div');
+    drawer.className = 'nav-drawer';
+    drawer.innerHTML = `
+      <div class="nav-panel">
+        <a href="#feed">Network</a>
+        <a href="#communities">Communities</a>
+        <a href="#scholarships">Scholarships</a>
+        <a href="#blocks">Building Blocks</a>
+        <a href="#trust">Trust</a>
+        <div class="nav-panel-cta">
+          <a class="btn btn-ghost" href="#">Log in</a>
+          <a class="btn btn-primary" href="#join">Join free <span class="arr">→</span></a>
+        </div>
+      </div>`;
+    document.body.appendChild(drawer);
+
+    const open = () => { drawer.classList.add('open'); burger.classList.add('open'); document.body.style.overflow = 'hidden'; };
+    const close = () => { drawer.classList.remove('open'); burger.classList.remove('open'); document.body.style.overflow = ''; };
+
+    burger.addEventListener('click', () => drawer.classList.contains('open') ? close() : open());
+    drawer.addEventListener('click', (e) => { if (!e.target.closest('.nav-panel')) close(); });
+    drawer.querySelectorAll('a').forEach(a => a.addEventListener('click', close));
+  })();
 })();

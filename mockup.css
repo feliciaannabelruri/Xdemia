@@ -211,3 +211,31 @@
   .xd-flow{grid-template-columns:1fr 1fr;gap:24px}
   .xd-flow::before{display:none}
 }
+@media(max-width:480px){
+  /* scale down the full app mockup on small phones */
+  .hero-shot .xd-frame{
+    font-size:.8rem;
+  }
+  .xd-top{padding:9px 12px;gap:10px}
+  .xd-logo{width:28px;height:28px;font-size:.78rem}
+  .xd-search{width:100px;padding:5px 10px;font-size:.72rem}
+  .xd-art-row{grid-template-columns:1fr}
+  .xd-grid{padding:10px}
+
+  /* communities mockup */
+  .xd-c-cover{width:90px;height:56px}
+  .xd-c-info .nm{font-size:.86rem}
+  .xd-c-info .ow,.xd-c-info .ds{font-size:.72rem}
+
+  /* scholarship mockup */
+  .xd-schol-hero{height:120px;padding:0 20px}
+  .xd-schol-hero h4{font-size:1.5rem}
+  .xd-flow{grid-template-columns:1fr 1fr}
+  .xd-step .ic{width:48px;height:48px}
+  .xd-step .ic svg{width:20px;height:20px}
+
+  /* building blocks mockup */
+  .xd-bb-img{width:110px;height:80px}
+  .xd-bb-body h5{font-size:.88rem}
+  .xd-bb-chips span{font-size:.62rem;padding:3px 8px}
+}
