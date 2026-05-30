@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Xdemia — The social network for learning</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="mockup.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#top" aria-label="Xdemia — home">
+      <img class="logo" src="assets/brand/logo-solid.png" alt="Xdemia">
+    </a>
+    <div class="nav-links">
+      <a href="#feed">Network</a>
+      <a href="#communities">Communities</a>
+      <a href="#scholarships">Scholarships</a>
+      <a href="#blocks">Building Blocks</a>
+      <a href="#trust">Trust</a>
+    </div>
+    <div class="nav-cta">
+      <a class="login" href="#">Log in</a>
+      <a class="btn btn-primary" href="#join">Join free <span class="arr">→</span></a>
+      <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ BANNER — portraits first ============ -->
+<header class="banner" id="top" data-screen-label="Banner">
+  <div class="banner-stage" id="bannerStage"><!-- slides injected --></div>
+  <div class="banner-scrim"></div>
+  <div class="banner-content">
+    <div class="banner-inner">
+      <span class="eyebrow">A trusted academic network · Made in the EU</span>
+      <h1 class="banner-head">
+        <span class="ln l1"><span class="t1">Learn.</span></span>
+        <span class="ln l2"><span class="t2">Research.</span></span>
+        <span class="ln l3"><span class="t3">Grow.</span></span>
+      </h1>
+      <p class="banner-lead">The social network built for learning — connecting students, teachers and researchers across Europe, in the footsteps of those who changed how the world learns.</p>
+      <div class="banner-actions">
+        <a class="btn btn-primary" href="#join">Join Xdemia free <span class="arr">→</span></a>
+        <a class="btn btn-ghost" href="#feed">See it in action</a>
+      </div>
+    </div>
+  </div>
+  <div class="banner-figure" id="bannerFigure">
+    <span class="bar"></span>
+    <span class="who"><span class="name" id="figName"></span><span class="role" id="figRole"></span></span>
+  </div>
+  <div class="banner-dots" id="bannerDots"></div>
+  <div class="banner-scroll"><span>Scroll</span><span class="ln2"></span></div>
+</header>
+
+<!-- ============ PRODUCT SHOWCASE ============ -->
+<section class="hero" id="feed" data-screen-label="Showcase">
+  <div class="shell hero-inner">
+    <div class="hero-top reveal">
+      <span class="eyebrow">See it in action</span>
+      <h2 class="hero-head">One home for everything<br>you <span class="hl">learn.</span></h2>
+      <p class="lead">Your feed, your communities, your courses, your scholarships — all in one trusted place. Here's what Xdemia looks like inside.</p>
+    </div>
+
+    <!-- REAL HOME FEED MOCKUP -->
+    <div class="hero-shot reveal d2" data-screen-label="Home feed mockup">
+      <div class="xd-frame">
+        <div class="xd-bar">
+          <div class="xd-dots"><i></i><i></i><i></i></div>
+          <div class="xd-url"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>app.xdemia.com</div>
+        </div>
+        <div class="xd-app">
+          <!-- top nav -->
+          <div class="xd-top">
+            <div class="xd-top-l">
+              <span class="xd-logo">x<b>δ</b></span>
+              <span class="xd-search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3-3"/></svg>Search…</span>
+            </div>
+            <div class="xd-tabs">
+              <span class="xd-tab on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg>Home</span>
+              <span class="xd-tab"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="8" r="3"/><path d="M3 20a6 6 0 0 1 12 0"/><circle cx="17" cy="9" r="2.2"/></svg>Members</span>
+              <span class="xd-tab"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9z"/></svg>Communities</span>
+              <span class="xd-tab"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4.5" width="18" height="16" rx="2"/><path d="M3 9h18M8 2.5v4M16 2.5v4"/></svg>Events</span>
+              <span class="xd-tab"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 7h18v12H3zM3 7l3-3h6l2 3"/></svg>My Drive</span>
+            </div>
+            <div class="xd-top-r">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 11.5a8.5 8.5 0 0 1-12 7.7L3 21l1.8-6A8.5 8.5 0 1 1 21 11.5z"/></svg>
+              <span class="xd-bell"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg><span class="badge">26</span></span>
+              <span class="xd-ava"><span class="pic">FA</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></span>
+              <span class="xd-support"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="2.5" y="13" width="4" height="6" rx="1.5"/><rect x="17.5" y="13" width="4" height="6" rx="1.5"/></svg></span>
+            </div>
+          </div>
+          <!-- 3-col body -->
+          <div class="xd-grid">
+            <!-- left -->
+            <aside class="xd-side-left">
+              <div class="xd-panel">
+                <div class="xd-side-h">Discover more</div>
+                <ul class="xd-disco">
+                  <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6"/></svg>Institutes</li>
+                  <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="4" y="3" width="16" height="18" rx="1.5"/><path d="M8 7h2M8 11h2M8 15h2M14 7h2M14 11h2"/></svg>Organisations</li>
+                  <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 5v14M8 5v14M13 5l5 14"/></svg>Repository <em style="font-style:normal;color:var(--faint);font-size:.72rem;font-weight:400">(Beta)</em></li>
+                  <li class="on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="8" height="8" rx="1.5"/><rect x="13" y="3" width="8" height="8" rx="1.5"/><rect x="3" y="13" width="8" height="8" rx="1.5"/></svg>Building Blocks <span class="dot"></span></li>
+                  <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 6h13v12H4z"/><path d="M17 9l3-1.5v9L17 15"/></svg>Courses <span class="dot"></span></li>
+                  <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M14 4l6 6-9 9-6 1 1-6z"/></svg>Scholarships</li>
+                  <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="4" y="4" width="16" height="16" rx="1.5"/><path d="M8 9h8M8 13h5"/></svg>Newsroom <span class="dot"></span></li>
+                  <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 20s-7-4.5-7-9.5A3.5 3.5 0 0 1 12 7a3.5 3.5 0 0 1 7 3.5C19 15.5 12 20 12 20z"/></svg>Favourites <em style="font-style:normal;color:var(--faint);font-size:.72rem;font-weight:400">(0)</em></li>
+                </ul>
+              </div>
+              <div class="xd-panel xd-comm-card">
+                <div class="xd-comm-h">Communities <span class="plus">+</span></div>
+                <div class="xd-comm-item"><span class="cv"><b>xδ</b></span><span><span class="nm">Xdemia Marketing</span><span class="st">Closed</span></span></div>
+              </div>
+            </aside>
+
+            <!-- center -->
+            <section class="xd-center">
+              <div class="xd-compose">
+                <span class="me">FA</span>
+                <span class="field">Start a conversation… <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14l4-4h12a2 2 0 0 0 2-2z"/></svg></span>
+                <span class="post">Post</span>
+              </div>
+              <div class="xd-articles">
+                <div class="xd-art-h"><span class="t">Recent articles</span><span class="more">Show more</span></div>
+                <div class="xd-art-row">
+                  <article class="xd-art">
+                    <div class="img"><img src="assets/portraits/malala.png" alt=""><span class="fav"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-7-4.5-7-9.5A3.5 3.5 0 0 1 12 7a3.5 3.5 0 0 1 7 3.5C19 15.5 12 20 12 20z"/></svg></span></div>
+                    <div class="by"><span class="av" style="display:grid;place-items:center;color:#fff;font-size:.5rem;font-weight:700">AG</span>Ari Ganesa <span class="vf">✓</span></div>
+                    <h5>Academic Identity Crisis in the Automation Era</h5>
+                    <p>For a long time, academic identity felt clear. Good grades reflected real understanding…</p>
+                    <div class="meta"><span>6 May 2026</span><span class="v"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>21 Views</span></div>
+                  </article>
+                  <article class="xd-art">
+                    <div class="img"><img src="assets/portraits/mandela.png" alt=""><span class="fav"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-7-4.5-7-9.5A3.5 3.5 0 0 1 12 7a3.5 3.5 0 0 1 7 3.5C19 15.5 12 20 12 20z"/></svg></span></div>
+                    <div class="by"><span class="av" style="display:grid;place-items:center;color:#fff;font-size:.5rem;font-weight:700">IF</span>Ibnu Fanhar <span class="vf">✓</span></div>
+                    <h5>Kerja Rodi Di Balik Algoritma FYP</h5>
+                    <p>Bayangin kamu masuk ke dunia kerja ala film The Devil Wears Prada…</p>
+                    <div class="meta"><span>13 April 2026</span><span class="v"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>288 Views</span></div>
+                  </article>
+                  <article class="xd-art">
+                    <div class="img"><img src="assets/portraits/einstein.png" alt=""><span class="fav"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-7-4.5-7-9.5A3.5 3.5 0 0 1 12 7a3.5 3.5 0 0 1 7 3.5C19 15.5 12 20 12 20z"/></svg></span></div>
+                    <div class="by"><span class="av" style="display:grid;place-items:center;color:#fff;font-size:.5rem;font-weight:700">IF</span>Ibnu Fanhar <span class="vf">✓</span></div>
+                    <h5>Exploitation Behind Algorithm</h5>
+                    <p>Imagine entering a world like The Devil Wears Prada, where every demand…</p>
+                    <div class="meta"><span>8 April 2026</span><span class="v"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>57 Views</span></div>
+                  </article>
+                </div>
+                <div class="xd-feed-tabs"><span class="on">Posts from your network</span><span>What others say</span></div>
+              </div>
+            </section>
+
+            <!-- right -->
+            <aside class="xd-side-right">
+              <div class="xd-panel xd-r-card">
+                <div class="xd-r-h"><span class="t">Data Activity</span><span class="up">Upgrade</span></div>
+                <div class="xd-data-bar"><i></i></div>
+                <div class="xd-data-txt">0% used · 0.27 GB of 20 GB <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg></div>
+              </div>
+              <div class="xd-panel xd-r-card">
+                <div class="xd-r-h"><span class="t">Events</span><span class="plus">+</span></div>
+                <div class="xd-ev"><span class="th"><img src="assets/portraits/satyarthi.png" alt=""></span><span><span class="nm">Video News Challenge</span><span class="dt">06/10/2025</span></span></div>
+                <div class="xd-ev"><span class="th"><img src="assets/portraits/comenius.png" alt=""></span><span><span class="nm">LRT City Sentul</span><span class="dt">06/04/2026</span></span></div>
+              </div>
+              <div class="xd-panel xd-r-card">
+                <div class="xd-r-h"><span class="t">Recent files</span></div>
+                <div class="xd-file"><span class="ic">PDF</span><span class="nm">LRT City Sentul.pdf</span></div>
+                <div class="xd-file"><span class="ic">PDF</span><span class="nm">Adhi Cipta Community.pdf</span></div>
+                <div class="xd-file"><span class="ic file">FILE</span><span class="nm">Logo Xdemia</span></div>
+              </div>
+            </aside>
+          </div>
+          <span class="xd-msg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Messages</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STAT STRIP ============ -->
+<section class="statband reveal" data-screen-label="Stats">
+  <div class="shell statband-inner">
+    <div class="sb"><span class="n" data-count="256">0</span><span class="l">Peer-reviewed courses</span></div>
+    <div class="sb"><span class="n" data-count="1000" data-suffix="+">0</span><span class="l">Scholarships worldwide</span></div>
+    <div class="sb"><span class="n" data-count="84">0</span><span class="l">Building Blocks</span></div>
+    <div class="sb"><span class="n">20<small>GB</small></span><span class="l">Free secure EU storage</span></div>
+  </div>
+</section>
+
+<!-- ============ FEATURE: COMMUNITIES ============ -->
+<section class="feat" id="communities" data-screen-label="Communities">
+  <div class="shell feat-wrap">
+    <div class="feat-copy reveal">
+      <span class="eyebrow">Communities</span>
+      <h2>Find your people. Build your circle.</h2>
+      <p>Open or closed spaces where students, teachers and researchers gather around the topics they care about — connected to your profile, courses and content.</p>
+      <ul class="flist">
+        <li><span class="ck">✓</span>Create a community in a click — open to all, or invite-only</li>
+        <li><span class="ck">✓</span>Owned and moderated by real, verified members</li>
+        <li><span class="ck">✓</span>From a 10-person study group to a 5,000-strong network</li>
+      </ul>
+    </div>
+    <div class="feat-shot reveal d2">
+      <div class="xd-frame">
+        <div class="xd-bar"><div class="xd-dots"><i></i><i></i><i></i></div><div class="xd-url">app.xdemia.com/communities</div></div>
+        <div class="xd-app" style="padding:20px">
+          <div class="xd-panel">
+            <div class="xd-c-row">
+              <div class="xd-c-cover"><span class="badge">x<b>δ</b></span></div>
+              <div class="xd-c-info"><div class="nm">Xdemia Marketing</div><div class="ow">Owner · <b>Firos Kariman</b></div><div class="ds">The Xdemia marketing studio</div></div>
+              <div class="xd-c-meta"><span class="xd-c-status">Closed · 10 members</span><span class="xd-c-join">Joined</span></div>
+            </div>
+            <div class="xd-c-row">
+              <div class="xd-c-cover b"><span class="badge">x<b>δ</b></span></div>
+              <div class="xd-c-info"><div class="nm">Xdemia Support</div><div class="ow">Owner · <b>Firos Kariman</b></div><div class="ds">Help and answers from the Xdemia team</div></div>
+              <div class="xd-c-meta"><span class="xd-c-status">Open · 5.4K members</span><span class="xd-c-join">Joined</span></div>
+            </div>
+            <div class="xd-c-row">
+              <div class="xd-c-cover"><span class="badge">JF</span></div>
+              <div class="xd-c-info"><div class="nm">Jurnalis x Felicia</div><div class="ow">Owner · <b>Felicia Annabel</b></div><div class="ds">Discuss journals and content on this platform</div></div>
+              <div class="xd-c-meta"><span class="xd-c-status">Open · 1.2K members</span><span class="xd-c-join">Join</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURE: SCHOLARSHIPS ============ -->
+<section class="feat flip" id="scholarships" data-screen-label="Scholarships">
+  <div class="shell feat-wrap">
+    <div class="feat-copy reveal">
+      <span class="eyebrow">Scholarships</span>
+      <h2>Find your dream study — and fund it.</h2>
+      <p>Browse more than a thousand scholarships from across the world, compare your fit, and apply with confidence. Talent should never be limited by access.</p>
+      <ul class="flist">
+        <li><span class="ck">✓</span>1,000+ opportunities, continuously updated</li>
+        <li><span class="ck">✓</span>Compare programmes and read what other students say</li>
+        <li><span class="ck">✓</span>A guided path from search to application</li>
+      </ul>
+    </div>
+    <div class="feat-shot reveal d2">
+      <div class="xd-frame">
+        <div class="xd-bar"><div class="xd-dots"><i></i><i></i><i></i></div><div class="xd-url">app.xdemia.com/scholarships</div></div>
+        <div class="xd-app" style="padding:20px">
+          <div class="xd-panel">
+            <div class="xd-schol-hero">
+              <img src="assets/portraits/satyarthi.png" alt="">
+              <div class="sc"></div>
+              <h4>Find your dream study</h4>
+              <p>find scholarships to finance your study</p>
+            </div>
+            <div class="xd-flow">
+              <div class="xd-step"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="11" cy="11" r="7"/><path d="m20 20-3-3"/></svg></span><h5>All Results</h5><p>Browse 1,000+ scholarships from all over the world.</p></div>
+              <div class="xd-step"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 7h7v13H4zM13 4h7v16h-7z"/></svg></span><h5>Compare</h5><p>Check your fit and read what other students say.</p></div>
+              <div class="xd-step"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/></svg></span><h5>Decide</h5><p>Shortlist the programmes that fit you best.</p></div>
+              <div class="xd-step"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4z"/></svg></span><h5>Apply</h5><p>When you feel confident, apply with one click.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURE: BUILDING BLOCKS ============ -->
+<section class="feat" id="blocks" data-screen-label="Building Blocks">
+  <div class="shell feat-wrap">
+    <div class="feat-copy reveal">
+      <span class="eyebrow">Building Blocks · Beta</span>
+      <h2>Education, at the smallest meaningful level.</h2>
+      <p>A Building Block is a curated set of related learning elements — lectures, readings, datasets, lab setups and assignments — that together cover one topic. Use a whole block, or pull the single element you need.</p>
+      <ul class="flist">
+        <li><span class="ck">✓</span>Authored by teachers and experts at public institutions</li>
+        <li><span class="ck">✓</span>Updated continuously — never rebuilt from scratch</li>
+        <li><span class="ck">✓</span>Filter by EQF level, complexity, KAI &amp; CDIO</li>
+      </ul>
+    </div>
+    <div class="feat-shot reveal d2">
+      <div class="xd-frame">
+        <div class="xd-bar"><div class="xd-dots"><i></i><i></i><i></i></div><div class="xd-url">app.xdemia.com/building-blocks</div></div>
+        <div class="xd-app" style="padding:20px">
+          <div class="xd-panel">
+            <div class="xd-bb-tabs"><span>About</span><span class="on">Catalogue (84)</span><span class="r">My BBs (0)</span></div>
+            <div class="xd-bb-item">
+              <div class="xd-bb-img"><img src="assets/portraits/comenius.png" alt=""><span class="inst">RWTH AACHEN</span></div>
+              <div class="xd-bb-body">
+                <div class="xd-bb-src">P4ELECS · DC Charging Plazas</div>
+                <h5>LCA for different charging infrastructure systems</h5>
+                <div class="xd-bb-sys">System</div>
+                <div class="xd-bb-chips"><span>Master 7</span><span>Application</span><span>Conceive</span><span>Intermediate</span><span>8 Hours</span></div>
+                <div class="xd-bb-foot"><span class="au" style="display:grid;place-items:center;color:#fff;font-size:.56rem;font-weight:700">ME</span><span class="aun">Menna Elsobki</span><span class="tag">Author</span><span class="priv"><span class="mapb">Map</span>Private</span></div>
+              </div>
+            </div>
+            <div class="xd-bb-item">
+              <div class="xd-bb-img"><img src="assets/portraits/plato.png" alt=""><span class="inst">RWTH AACHEN</span></div>
+              <div class="xd-bb-body">
+                <div class="xd-bb-src">P4ELECS · PV</div>
+                <h5>Life cycle assessment of electricity from PV systems</h5>
+                <div class="xd-bb-sys">System</div>
+                <div class="xd-bb-chips"><span>Master 7</span><span>Application</span><span>Intermediate</span><span>8 Hours</span></div>
+                <div class="xd-bb-foot"><span class="au" style="display:grid;place-items:center;color:#fff;font-size:.56rem;font-weight:700">ME</span><span class="aun">Menna Elsobki</span><span class="tag">Author</span><span class="priv"><span class="mapb">Map</span>Private</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LMS BRIDGE (concrete) ============ -->
+<section class="bridge" id="bridge" data-screen-label="LMS Bridge">
+  <div class="shell bridge-wrap">
+    <div class="bridge-viz reveal">
+      <div class="bv-head">
+        <span class="bv-label">One course · two campuses</span>
+        <span class="bv-status"><i></i>Syncing</span>
+      </div>
+      <div class="bv-flow">
+        <div class="bv-inst"><span class="bv-logo">RA</span><span class="bv-name">RWTH Aachen</span><span class="bv-sys">Moodle LMS</span></div>
+        <div class="bv-rail">
+          <span class="bv-line"></span>
+          <span class="bv-hub">x<span>δ</span></span>
+          <span class="bv-hub-label">Bridge</span>
+          <span class="bv-packet" id="bvPacket"><span class="pk-ico">▤</span><span class="pk-txt">LCA for charging infrastructure</span></span>
+        </div>
+        <div class="bv-inst"><span class="bv-logo alt">KL</span><span class="bv-name">KU Leuven</span><span class="bv-sys">Canvas LMS</span></div>
+      </div>
+      <div class="bv-foot">
+        <span class="bv-foot-item"><b>0</b> extra logins</span>
+        <span class="bv-foot-item"><b>1</b> shared course</span>
+        <span class="bv-foot-item"><b>∞</b> borders crossed</span>
+      </div>
+    </div>
+    <div class="bridge-copy reveal d1">
+      <span class="eyebrow">The LMS Bridge</span>
+      <h2 class="h2">Open education, across every border.</h2>
+      <p>The LMS Bridge lets teachers share courses and content across different LMS systems. Students no longer register separately at partner institutions to follow exchange programmes — the course travels with them.</p>
+      <p class="euro">It brings the true European spirit of education to life: <em>open, connected, collaborative</em>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRUST ============ -->
+<section class="trust" id="trust" data-screen-label="Trust">
+  <div class="shell trust-grid">
+    <div class="reveal">
+      <span class="eyebrow">Trust by design</span>
+      <h2 class="h2">No ads. No profiling.<br>No hidden agenda.</h2>
+      <p class="lead-line">A learning network should answer to learners — not advertisers. So that is exactly how we built it.</p>
+    </div>
+    <div class="trust-list">
+      <div class="treveal reveal d1"><span class="tnum">EU</span><div><h4>Built &amp; hosted in the European Union</h4><p>Privacy, security and data sovereignty by design — your data stays yours.</p></div></div>
+      <div class="treveal reveal d2"><span class="tnum">✓</span><div><h4>Verified members, encrypted messaging</h4><p>Real people, real institutions. Communication you can trust.</p></div></div>
+      <div class="treveal reveal d3"><span class="tnum">∅</span><div><h4>No third-party data sharing</h4><p>Built for learning — not for advertising or attention extraction.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COLLABORATION ============ -->
+<section class="partners" id="collab" data-screen-label="Partners">
+  <div class="shell">
+    <div class="sec-head reveal" style="text-align:center;margin-inline:auto">
+      <span class="eyebrow">In collaboration</span>
+      <h2 class="h2">Built with leading institutions across Europe.</h2>
+    </div>
+  </div>
+  <div class="marquee"><div class="marquee-track" id="ptrack"></div></div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="cta" id="join" data-screen-label="CTA">
+  <div class="shell cta-inner reveal">
+    <span class="glow"></span>
+    <span class="eyebrow center" style="justify-content:center;margin-bottom:22px">Learn · Research · Grow</span>
+    <h2>Join the network built<br>to move <em>learners</em> forward.</h2>
+    <p>Free to join. Made and hosted in the European Union. No ads, ever.</p>
+    <div class="cta-actions">
+      <a class="btn btn-primary" href="#">Join Xdemia free <span class="arr">→</span></a>
+      <a class="btn btn-ghost" href="#">Talk to our team</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer data-screen-label="Footer">
+  <div class="shell">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="#top"><img class="logo" src="assets/brand/logo-white.png" alt="Xdemia"></a>
+        <p>The social network built for learning — content, communities and communication from trusted public institutions.</p>
+        <span class="foot-eu"><span class="stars">★</span> Made &amp; hosted in the European Union</span>
+      </div>
+      <div class="foot-col">
+        <h4>Platform</h4>
+        <a href="#feed">Network &amp; feed</a>
+        <a href="#communities">Communities</a>
+        <a href="#blocks">Building Blocks</a>
+        <a href="#scholarships">Scholarships</a>
+      </div>
+      <div class="foot-col">
+        <h4>Discover</h4>
+        <a href="#">Members</a>
+        <a href="#">Events</a>
+        <a href="#">Newsroom</a>
+        <a href="#">Repository</a>
+      </div>
+      <div class="foot-col">
+        <h4>Institutions</h4>
+        <a href="#collab">Partner with us</a>
+        <a href="#bridge">LMS Bridge</a>
+        <a href="#trust">Privacy &amp; data</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Xdemia. Learn · Research · Grow.</span>
+      <span class="links"><a href="#">Privacy</a><a href="#">Security</a><a href="#">Data sovereignty</a><a href="#">Terms</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- Tweaks -->
+<div id="tweaks-root"></div>
+<script src="app.js"></script>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<script type="text/babel" src="tweaks-app.jsx"></script>
+</body>
+</html>

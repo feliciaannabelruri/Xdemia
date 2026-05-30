@@ -1,0 +1,130 @@
+
+Website Xdemia 
+When: 16-05-2026
+Xdemia — Built for learners. 
+A platform exclusively built around learners by offering content, collaboration and communication tools. 
+Premium learning content from leading trusted public institutions
+Educational quality is not optional; it is part of our DNA.
+Xdemia provides learners access to high-quality, peer-reviewed courses developed by teachers and experts from leading public VET and Higher Education institutions and organisations. Content is rooted in academic and professional expertise, so learners can shape their future through content they can trust.
+For institutions, Xdemia facilitates a new way to share their educational excellence beyond their own campus or LMS. Public education providers can collaborate across borders, open trusted learning pathways to new audiences, and — where relevant — generate additional revenues. 
+A learning ecosystem where quality comes first. 
+Put here the logo’s of the institutes that you can find on https://p4elecs.com/partners without the associated partners in a carousel format. 
+Trusted
+Trust is built into our foundation. Our platform is developed and hosted in the European Union, with privacy, security, and data sovereignty by design. Members are verified, messaging is encrypted, and users remain in control of their data.
+No third-party data sharing. No behavioural profiling. No hidden agenda. Just build for learning — not for distraction, advertising, or attention extraction.  
+True modular education
+Developed in collaboration with leading education institutes and learning experts in Europe, Xdemia introduces the Building Blocks. A truly modular and highly affordable carefully curated collection of related learning elements: files, resources, assignments, lab setups, data, etc. that together cover a specific topic. 
+Building Blocks enable teachers and trainers to create or enrich their courses and training programmes by integrating a complete Building Block or by selecting only the specific file, resource, or learning element they need in their own LMS.
+Teachers and trainers can update, improve, and personalise their learning and training materials without rebuilding an entire course from scratch. Valuable time is saved, while students and professionals benefit from learning and training content that reflects the latest knowledge, developments, and real-world practice.
+This creates a modular learning infrastructure at the smallest meaningful level of education: the learning element itself.
+For institutions and organisations, Building Blocks offer the flexibility they need. They can easily assemble customised learning environments aligned with their educational programmes, professional training needs, or lifelong learning strategy.
+Exchange learning content between LMS systems - The LMS BridgeThe LMS bridge allows teachers to share their courses and learning content across different LMS systems. Students no longer need to register separately at partner institutions to follow exchange programs. 
+It facilitates a new way to open education across borders, institutions, and communities. 
+It brings the true European spirit of education to life: open, connected, collaborative — and built to move learners forward.
+
+Every learner has a personal profile that grows over time, connected to courses, communities, content, events, and their professional network.
+
+
+
+
+
+
+The Learners suite
+Xdemia offers a complete learning ecosystem designed to challenge learners and keep them connected, engaged, informed, and supported throughout their professional development.
+
+From events and communities to scholarships, news, and secure storage, every part of the Learners Suite is built around one purpose: helping learners move forward — together.
+
+Events — challenge your skills
+We believe that learning becomes more powerful when it is active, shared, and connected to real world challenges. 
+Our events turn knowledge into challenges. This helps learners to apply what they learn, meet others with shared interests, and engage with topics beyond the classroom or course environment.
+For institutions, events create new ways to activate communities, connect theory to practice, and strengthen engagement across borders.
+Our challenges offer learners to test their skills level by competing with others and to earn acknowledgements by professionals and international audience. 
+Participants do not only receive appreciation but can also win cash prizes. 
+Communities – where learning happens together
+Learning is not a solo journey. It improves through connection, collaboration, and shared purpose.
+Communities provide learners, teachers, researchers, and institutions trusted spaces to learn together, collaborate on student or research projects, exchange ideas, offer peer support, and reflect on learning.
+Unlike isolated chat groups or generic online forums, our Communities are directly connected to learner journeys, profiles, courses, and Building Blocks. This means collaboration becomes part of the learning experience — not something separate from it.
+Communities help create belonging, strengthen motivation, and make knowledge exchange visible across institutions and disciplines.
+
+Newsroom – bite size news articles. 
+Learners need more than content. They need context.
+The Newsroom module keeps learners connected to research, innovation, public education, and relevant societal developments. It offers bite-sized news, research articles, institutional insights, and curated updates designed for learning — not for clicks.
+
+There is no advertising pressure. No algorithmic manipulation. No endless feed built to capture attention.
+Instead, the Newsroom is curated to help learners and professionals understand the world around their studies, connect knowledge to current issues, and stay close to new ideas and opportunities.
+
+
+Scholarships – opening access to opportunities
+Talent should never be limited by access to information.
+We bring together more than 2,000 active scholarships in one central place, making it easier for learners to discover financial support for study, training, mobility, and lifelong learning opportunities.
+
+Scholarships are continuously updated and made easy to explore, helping learners find opportunities that match their ambitions, background, and learning goals.
+For institutions and organisations, this strengthens inclusive access to education and supports a lifelong learning culture where more people can participate, grow, and progress.
+
+
+
+And more …
+
+Secure data storage and transfer
+Every user receives up to 3 GB of free, secure storage to store:
+Study materials
+Project files
+Research documents
+Personal learning artefacts
+And other valuable content
+Files remain connected to learning journeys and personal profiles. Storage can be topped up for individual needs. 
+Some inspirations
+#.1 
+
+Using this design  each section has an image with the text. 
+#. 2 A design like this is also nice. https://lusion.co/projects/oryzo_ai 
+
+In the right section we can show an avatar that presents the feature/ functionality. 
+I also like this website. https://feedbackfruits.com/ 
+But it could be more sexier.
+
+---- Design ----
+#. Font types: 
+Brockmann for titles
+Poppins for body text
+
+Habeo+:Ook de typografie draagt bij aan de minimalistische en moderne uitstraling. Hiervoor worden twee lettertypes gecombineerd: Brockmann, een modern font dat vooral in de grote koppen wordt gebruikt. Voor de langere stukken tekst wordt het eveneens schreefloze lettertype Poppins gebruikt. Doordat allebei de lettertypes ronden vormen gebruiken contrasteren de fonts niet teveel, maar door vettere letters te gebruiken in de titels werkt de combinatie verrassend goed.
+
+Historische figuren
+
+De persoon die wereldwijd wordt erkend als de absolute pionier en "vader van het moderne onderwijs" is Jan Amos Comenius (1592-1670). Waar Horace Mann zich vooral op het Amerikaanse systeem richtte, was Comenius een Tsjechische filosoof wiens visie de hele wereld overging.
+
+Pansofisme (Alles aan iedereen): Zijn centrale ideaal was "omnes, omnia, omnino" (alles aan iedereen op alle mogelijke manieren onderwijzen). Hij geloofde dat onderwijs de sleutel was tot wereldvrede en menselijkheid.
+Gelijkheid: Al in de 17e eeuw bepleitte hij dat onderwijs toegankelijk moest zijn voor iedereen, ongeacht geslacht (ook meisjes), sociale klasse (ook arme kinderen) of afkomst.
+Visueel en Modern: Hij schreef de Orbis Sensualium Pictus, het eerste geïllustreerde schoolboek ter wereld, omdat hij vond dat kinderen beter leerden door te kijken en te doen dan door alleen teksten uit het hoofd te leren.
+
+
+Maria Montessori (Italië): Ontwikkelde een methode die wereldwijd in meer dan 140 landen wordt gebruikt, waarbij de focus ligt op de natuurlijke ontwikkeling van het kind.
+
+
+
+Kailash Satyarthi
+
+De meest prominente voorvechter van onderwijs voor straatkinderen en kwetsbare kinderen in India is Kailash Satyarthi. Hij ontving in 2014 de Nobelprijs voor de Vrede voor zijn decennialange strijd tegen kinderarbeid en zijn inzet voor het recht op onderwijs voor elk kind.
+
+
+Pater José María Vélaz 
+Zijn visie hield in dat:
+Kwaliteit een recht is: Kinderen in achterstandssituaties hebben juist het beste onderwijs nodig, niet een tweederangs versie, om de cirkel van armoede te doorbreken.
+Waardigheid: De schoolgebouwen en materialen moeten respect uitstralen; een "arme" omgeving bevestigt enkel het gevoel van uitsluiting.
+Transformatie: Onderwijs moet niet alleen kennis bijbrengen, maar mensen leren hun eigen realiteit te veranderen.
+
+Onderwijs voor de armen mag geen arm onderwijs zijn
+
+Websites:
+https://loyalistcollege.com/
+
+https://www.awwwards.com/websites/institutions/
+
+https://navyyarddc.org/
+
+https://slite.com/ 
+https://www.aprilford.com/
+https://habeoplus.nl/ 
+https://feedbackfruits.com/ 
+https://www.mi.com/nl/product/xiaomi-17/ 

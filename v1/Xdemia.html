@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Xdemia — Built for learners</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#top" aria-label="Xdemia — home">
+      <img class="logo" src="assets/brand/logo-white.png" alt="Xdemia">
+    </a>
+    <div class="nav-links">
+      <a href="#content">Content</a>
+      <a href="#blocks">Building Blocks</a>
+      <a href="#bridge">LMS Bridge</a>
+      <a href="#suite">Learners Suite</a>
+      <a href="#institutions">For institutions</a>
+    </div>
+    <div class="nav-cta">
+      <a class="login" href="#">Log in</a>
+      <a class="btn btn-primary" href="#join">Join Xdemia <span class="arr">→</span></a>
+      <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="top" data-screen-label="Hero">
+  <div class="hero-stage" id="heroStage"><!-- slides injected --></div>
+  <div class="hero-scrim"></div>
+  <svg class="hero-grain" xmlns="http://www.w3.org/2000/svg"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2"/></filter><rect width="100%" height="100%" filter="url(#n)" opacity="0.4"/></svg>
+
+  <div class="hero-content">
+    <div class="hero-inner">
+      <span class="eyebrow">A learning ecosystem · Made in the EU</span>
+      <h1 class="display">
+        <span class="row"><span>Built for</span></span>
+        <span class="row"><span><em>learners.</em></span></span>
+      </h1>
+      <p class="lead">A platform built exclusively around learners — premium content, real collaboration, and trusted communication, from leading public institutions across Europe.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#content">Explore the platform <span class="arr">→</span></a>
+        <a class="btn btn-ghost" href="#institutions">For institutions</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-figure" id="heroFigure">
+    <span class="bar"></span>
+    <span class="who">
+      <span class="name" id="figName"></span>
+      <span class="role" id="figRole"></span>
+      <span class="line" id="figLine"></span>
+    </span>
+  </div>
+
+  <div class="hero-dots" id="heroDots"></div>
+
+  <div class="scroll-hint"><span>Scroll</span><span class="dotline"></span></div>
+</header>
+
+<!-- ============ VALUE / CONTENT ============ -->
+<section class="value" id="content" data-screen-label="Value">
+  <div class="shell value-grid">
+    <div class="left reveal">
+      <span class="eyebrow">Premium content</span>
+      <h2 class="h2" style="margin-top:22px">Quality is not optional — it is part of our <span class="dna">DNA</span>.</h2>
+    </div>
+    <div class="right">
+      <p class="reveal d1">Xdemia gives learners access to high-quality, peer-reviewed courses developed by teachers and experts from leading public VET and Higher Education institutions.</p>
+      <p class="reveal d2">Content is rooted in academic and professional expertise — so learners can shape their future through material they can genuinely <em style="color:var(--teal);font-style:normal">trust</em>.</p>
+      <p class="reveal d3">For institutions, Xdemia opens a new way to share educational excellence beyond a single campus or LMS — collaborating across borders and reaching new audiences.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PARTNERS ============ -->
+<section class="partners reveal" data-screen-label="Partners">
+  <div class="label">In collaboration with leading institutions across Europe</div>
+  <div class="marquee"><div class="marquee-track" id="ptrack"></div></div>
+</section>
+
+<!-- ============ PILLARS ============ -->
+<section class="pillars" id="institutions" data-screen-label="Pillars">
+  <div class="shell">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Why Xdemia</span>
+      <h2 class="h2" style="margin-top:22px">A learning ecosystem where quality comes first.</h2>
+      <p>Three foundations make Xdemia different from any feed, marketplace, or generic LMS.</p>
+    </div>
+    <div class="pillar-grid">
+      <article class="pillar reveal d1">
+        <span class="pnum">01 / TRUSTED</span>
+        <span class="picon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2 4 5v6c0 5 3.5 8.5 8 11 4.5-2.5 8-6 8-11V5l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg>
+        </span>
+        <h3>Trusted by design</h3>
+        <p>Developed and hosted in the European Union, with privacy, security, and data sovereignty built into the foundation. Members are verified and messaging is encrypted.</p>
+        <ul class="tick-list">
+          <li>No third-party data sharing</li>
+          <li>No behavioural profiling</li>
+          <li>Built for learning — not attention extraction</li>
+        </ul>
+      </article>
+      <article class="pillar reveal d2">
+        <span class="pnum">02 / MODULAR</span>
+        <span class="picon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+        </span>
+        <h3>True modular education</h3>
+        <p>The Building Blocks — a curated collection of related learning elements that together cover a topic. Use a whole block, or just the single resource you need in your own LMS.</p>
+        <a class="more" href="#blocks">How Building Blocks work <span class="arr">→</span></a>
+      </article>
+      <article class="pillar reveal d3">
+        <span class="pnum">03 / CONNECTED</span>
+        <span class="picon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="6" cy="6" r="3"/><circle cx="18" cy="18" r="3"/><circle cx="18" cy="6" r="3"/><path d="M9 6h6M8.5 8.5 15.5 15.5M18 9v6"/></svg>
+        </span>
+        <h3>The LMS Bridge</h3>
+        <p>Share courses and content across different LMS systems. Students no longer register separately at partner institutions to follow exchange programmes — education moves freely.</p>
+        <a class="more" href="#bridge">See the LMS Bridge <span class="arr">→</span></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BUILDING BLOCKS ============ -->
+<section class="bblocks" id="blocks" data-screen-label="Building Blocks">
+  <div class="shell bb-grid">
+    <div class="bb-copy reveal">
+      <span class="eyebrow">Building Blocks</span>
+      <h2 class="h2">Education, at the smallest meaningful level.</h2>
+      <p>A Building Block is a carefully curated set of related learning elements — files, resources, assignments, lab setups and data — that together cover a specific topic.</p>
+      <p class="pull">Teachers update and personalise their materials without rebuilding an entire course from scratch.</p>
+      <p>Valuable time is saved, while students benefit from content that reflects the latest knowledge, developments, and real-world practice — a modular learning infrastructure that institutions can assemble to fit any programme.</p>
+    </div>
+    <div class="bb-visual reveal d2">
+      <div class="bb-board">
+        <span class="glow"></span>
+        <div class="bb-mod-grid" id="bbGrid">
+          <div class="mod tall"><span class="mt">Lecture</span><span class="mi"></span></div>
+          <div class="mod"><span class="mt">Reading</span><span class="mi"></span></div>
+          <div class="mod"><span class="mt">Quiz</span><span class="mi"></span></div>
+          <div class="mod wide"><span class="mt">Lab setup</span><span class="mi"></span></div>
+          <div class="mod"><span class="mt">Dataset</span><span class="mi"></span></div>
+          <div class="mod"><span class="mt">Video</span><span class="mi"></span></div>
+          <div class="mod"><span class="mt">Slides</span><span class="mi"></span></div>
+          <div class="mod"><span class="mt">Task</span><span class="mi"></span></div>
+          <div class="mod wide"><span class="mt">Assignment</span><span class="mi"></span></div>
+          <div class="mod"><span class="mt">Rubric</span><span class="mi"></span></div>
+        </div>
+        <span class="bb-tag">Select a whole block — or one element</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LMS BRIDGE ============ -->
+<section class="bridge" id="bridge" data-screen-label="LMS Bridge">
+  <div class="shell bridge-wrap">
+    <div class="bridge-viz reveal" id="bridgeViz">
+      <svg viewBox="0 0 460 340" id="bridgeSvg" aria-hidden="true"></svg>
+    </div>
+    <div class="bridge-copy reveal d1">
+      <span class="eyebrow">The LMS Bridge</span>
+      <h2 class="h2">Open education, across every border.</h2>
+      <p>The LMS Bridge lets teachers share their courses and learning content across different LMS systems. Students no longer need to register separately at partner institutions to follow exchange programmes.</p>
+      <p class="euro">It brings the true European spirit of education to life: <em>open, connected, collaborative</em> — and built to move learners forward.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LEARNERS SUITE ============ -->
+<section class="suite" id="suite" data-screen-label="Learners Suite">
+  <div class="shell">
+    <div class="sec-head reveal">
+      <span class="eyebrow">The Learners Suite</span>
+      <h2 class="h2" style="margin-top:22px">A complete ecosystem, built around one purpose.</h2>
+      <p>From events and communities to scholarships, news, and secure storage — every part is built to help learners move forward, together.</p>
+    </div>
+    <div class="suite-grid">
+      <article class="scard big reveal d1">
+        <span class="glowdot"></span>
+        <span class="num">01</span>
+        <span class="badge">Cash prizes</span>
+        <span class="sicon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 9V5a6 6 0 0 0 12 0V9"/><path d="M6 9a6 6 0 0 0 12 0"/><path d="M9 22h6M12 15v7"/></svg></span>
+        <div>
+          <h3>Events — challenge your skills</h3>
+          <p>Our events turn knowledge into challenges. Test your level against others, earn recognition from professionals and an international audience — and win cash prizes.</p>
+        </div>
+      </article>
+      <article class="scard med reveal d2">
+        <span class="glowdot"></span>
+        <span class="num">02</span>
+        <span class="sicon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="8" r="3"/><path d="M3 20a6 6 0 0 1 12 0"/><circle cx="17" cy="9" r="2.4"/><path d="M15.5 20a5 5 0 0 1 6.5-4.8"/></svg></span>
+        <div>
+          <h3>Communities — learn together</h3>
+          <p>Trusted spaces connected to learner journeys, profiles, courses and Building Blocks — so collaboration becomes part of the learning experience, not separate from it.</p>
+        </div>
+      </article>
+      <article class="scard third reveal d1">
+        <span class="glowdot"></span>
+        <span class="num">03</span>
+        <span class="sicon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 5h16v14H4z"/><path d="M8 9h8M8 13h5"/></svg></span>
+        <div>
+          <h3>Newsroom</h3>
+          <p>Bite-sized news, research and institutional insights — curated for learning, not for clicks. No advertising, no endless feed.</p>
+        </div>
+      </article>
+      <article class="scard third reveal d2">
+        <span class="glowdot"></span>
+        <span class="num">04</span>
+        <div style="margin-bottom:auto"><span class="stat"><span>2,000</span>+</span><p style="margin-top:6px">scholarships, continuously updated</p></div>
+        <div>
+          <h3>Scholarships</h3>
+          <p>Talent should never be limited by access. Explore opportunities matched to your ambitions and background.</p>
+        </div>
+      </article>
+      <article class="scard third reveal d3">
+        <span class="glowdot"></span>
+        <span class="num">05</span>
+        <span class="sicon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="5" rx="1.5"/><rect x="3" y="11" width="18" height="9" rx="1.5"/><path d="M7 6.5h.01M7 15.5h4"/></svg></span>
+        <div>
+          <h3>Secure storage</h3>
+          <p>Up to 3&nbsp;GB of free, encrypted EU-hosted storage — connected to your learning journey and profile.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ QUOTE BAND ============ -->
+<section class="quote" data-screen-label="Quote">
+  <div class="quote-bg"><img src="assets/portraits/velaz.png" alt="Father José María Vélaz"></div>
+  <div class="quote-scrim"></div>
+  <div class="shell">
+    <div class="quote-content reveal">
+      <span class="eyebrow" style="margin-bottom:30px">Why we exist</span>
+      <blockquote><span class="mark">“</span>Education for the poor must not be poor education.<span class="mark">”</span></blockquote>
+      <div class="attr">
+        <span class="bar"></span>
+        <span>
+          <span class="n" style="display:block">Father José María Vélaz</span>
+          <span class="r">Founder of Fe y Alegría · a movement for the right to quality education</span>
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROFILE STRIP ============ -->
+<section class="profile" data-screen-label="Profile">
+  <div class="shell">
+    <div class="profile-inner reveal">
+      <div>
+        <span class="eyebrow">Your learning identity</span>
+        <h2 class="h2" style="margin-top:20px">One profile that grows with you.</h2>
+        <p>Every learner has a personal profile that grows over time — connected to courses, communities, content, events, and their professional network. It moves with you, across institutions and across borders.</p>
+        <a class="btn btn-ghost" href="#join" style="margin-top:28px">Create your profile <span class="arr">→</span></a>
+      </div>
+      <div class="orbit">
+        <span class="ring r1"></span>
+        <span class="ring r2"></span>
+        <div class="orbit-spin">
+          <span class="chip" style="top:-2%;left:50%;transform:translateX(-50%)">Courses</span>
+          <span class="chip" style="top:50%;right:-8%;transform:translateY(-50%)">Communities</span>
+          <span class="chip" style="bottom:-2%;left:50%;transform:translateX(-50%)">Events</span>
+          <span class="chip" style="top:50%;left:-6%;transform:translateY(-50%)">Network</span>
+        </div>
+        <span class="core">xδ</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="cta" id="join" data-screen-label="CTA">
+  <span class="glow"></span>
+  <div class="shell cta-inner reveal">
+    <h2>Built to move <em>learners</em> forward.</h2>
+    <p>Open, connected, collaborative. Join the European learning ecosystem where quality comes first.</p>
+    <div class="cta-actions">
+      <a class="btn btn-primary" href="#">Join Xdemia <span class="arr">→</span></a>
+      <a class="btn btn-ghost" href="#">Talk to our team</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer data-screen-label="Footer">
+  <div class="shell">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="#top"><img class="logo" src="assets/brand/logo-white.png" alt="Xdemia"></a>
+        <p>A platform built exclusively around learners — content, collaboration and communication tools from trusted public institutions.</p>
+        <span class="foot-eu"><span class="stars">★</span> Made &amp; hosted in the European Union</span>
+      </div>
+      <div class="foot-col">
+        <h4>Platform</h4>
+        <a href="#content">Premium content</a>
+        <a href="#blocks">Building Blocks</a>
+        <a href="#bridge">LMS Bridge</a>
+        <a href="#suite">Learners Suite</a>
+      </div>
+      <div class="foot-col">
+        <h4>Learners Suite</h4>
+        <a href="#suite">Events</a>
+        <a href="#suite">Communities</a>
+        <a href="#suite">Newsroom</a>
+        <a href="#suite">Scholarships</a>
+      </div>
+      <div class="foot-col">
+        <h4>Institutions</h4>
+        <a href="#institutions">Share content</a>
+        <a href="#institutions">Partner with us</a>
+        <a href="#">Privacy &amp; data</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Xdemia. Education makes it possible.</span>
+      <span class="links">
+        <a href="#">Privacy</a><a href="#">Security</a><a href="#">Data sovereignty</a><a href="#">Terms</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+
+<!-- Tweaks -->
+<div id="tweaks-root"></div>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<script type="text/babel" src="tweaks-app.jsx"></script>
+</body>
+</html>

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Xdemia — Learn · Research · Grow</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#top" aria-label="Xdemia — home">
+      <img class="logo" src="assets/brand/logo-white.png" alt="Xdemia">
+    </a>
+    <div class="nav-links">
+      <a href="#inside">The platform</a>
+      <a href="#blocks">Building Blocks</a>
+      <a href="#bridge">LMS Bridge</a>
+      <a href="#trust">Trust</a>
+      <a href="#collab">Network</a>
+    </div>
+    <div class="nav-cta">
+      <a class="login" href="#">Log in</a>
+      <a class="btn btn-primary" href="#join">Join Xdemia <span class="arr">→</span></a>
+      <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="top" data-screen-label="Hero">
+  <div class="hero-left">
+    <div class="hero-copy">
+      <span class="eyebrow">A trusted European learning network</span>
+      <h1 class="hero-head">
+        <span class="ln l1"><span>Learn.</span></span>
+        <span class="ln l2"><span>Research.</span></span>
+        <span class="ln l3"><span>Grow<em class="dot">.</em></span></span>
+      </h1>
+      <p class="lead">A platform built exclusively around learners — premium content, real communities, and trusted tools, from leading public institutions across Europe.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#inside">Explore the platform <span class="arr">→</span></a>
+        <a class="btn btn-ghost" href="#join">Join free</a>
+      </div>
+      <div class="hero-stats" id="heroStats">
+        <div class="hs"><span class="n" data-count="256">0</span><span class="l">Courses</span></div>
+        <div class="hs"><span class="n" data-count="1000" data-suffix="+">0</span><span class="l">Scholarships</span></div>
+        <div class="hs"><span class="n" data-count="84">0</span><span class="l">Building Blocks</span></div>
+        <div class="hs"><span class="n">EU</span><span class="l">Hosted &amp; verified</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="hero-stage" id="heroStage"><!-- slides injected --></div>
+    <div class="hero-rscrim"></div>
+    <div class="hero-figure" id="heroFigure">
+      <span class="bar"></span>
+      <span class="who">
+        <span class="name" id="figName"></span>
+        <span class="role" id="figRole"></span>
+        <span class="line" id="figLine"></span>
+      </span>
+    </div>
+    <div class="hero-dots" id="heroDots"></div>
+    <span class="hero-delta">δ</span>
+  </div>
+</header>
+
+<!-- ============ MARQUEE STRIP ============ -->
+<div class="strip" aria-hidden="true">
+  <div class="strip-track" id="stripTrack"></div>
+</div>
+
+<!-- ============ INSIDE XDEMIA (bento) ============ -->
+<section class="inside" id="inside" data-screen-label="Inside Xdemia">
+  <div class="shell">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Inside Xdemia</span>
+      <h2 class="h2">One platform for every part of the journey.</h2>
+      <p>Not a feed built for distraction — a connected ecosystem of content, people, and opportunity. Here's what lives inside.</p>
+    </div>
+
+    <div class="bento">
+      <!-- FEED -->
+      <article class="bcard b-feed reveal" style="--i:0">
+        <div class="bc-top"><span class="bc-tag">◧ Your network</span><span class="bc-live">live</span></div>
+        <div class="feed-compose"><span class="ava">FA</span><span class="ph">Start a conversation…</span></div>
+        <div class="feed-post">
+          <div class="fp-thumb"><img src="assets/portraits/mandela.png" alt=""></div>
+          <div class="fp-body">
+            <span class="fp-by"><span class="dot-ava">AG</span>Ari Ganesa <span class="verif">✓</span></span>
+            <h4>Academic Identity Crisis in the Automation Era</h4>
+            <span class="fp-meta">6 May 2026 · 21 views</span>
+          </div>
+        </div>
+        <div class="feed-tabs"><span class="on">Posts from your network</span><span>What others say</span></div>
+      </article>
+
+      <!-- COMMUNITIES -->
+      <article class="bcard b-comm reveal" style="--i:1">
+        <div class="bc-top"><span class="bc-tag">⬡ Communities</span></div>
+        <div class="comm-cover"><span class="comm-ava">xδ</span></div>
+        <h4>Xdemia Marketing</h4>
+        <span class="comm-meta">Closed · 10 members</span>
+        <div class="comm-row">
+          <span class="avastack"><i>FK</i><i>MA</i><i>SJ</i><i>+7</i></span>
+          <span class="pill-join">Joined</span>
+        </div>
+      </article>
+
+      <!-- EVENTS -->
+      <article class="bcard b-events reveal" style="--i:2">
+        <div class="bc-top"><span class="bc-tag">▣ Events</span><span class="bc-plus">+</span></div>
+        <ul class="ev-list">
+          <li><span class="ev-date"><b>10</b>OCT</span><span class="ev-name">Video News Challenge<small>Win a cash prize</small></span></li>
+          <li><span class="ev-date"><b>04</b>APR</span><span class="ev-name">LRT City Sentul<small>Field challenge</small></span></li>
+        </ul>
+      </article>
+
+      <!-- BUILDING BLOCKS -->
+      <article class="bcard b-bb reveal" style="--i:3">
+        <div class="bc-top"><span class="bc-tag">◰ Building Blocks <em>Beta</em></span></div>
+        <div class="bb-card-img"><span class="ph-label">DC&nbsp;CHARGING&nbsp;INFRA</span><span class="inst-chip">RWTH AACHEN</span></div>
+        <span class="bb-src">P4ELECS · DC Charging Plazas</span>
+        <h4>LCA for charging infrastructure systems</h4>
+        <div class="bb-tags"><span>Master 7</span><span>Intermediate</span><span>8 Hours</span></div>
+      </article>
+
+      <!-- SCHOLARSHIPS -->
+      <article class="bcard b-schol reveal" style="--i:4">
+        <div class="bc-top"><span class="bc-tag">✦ Scholarships</span></div>
+        <div class="schol-head"><span class="big" data-count="1000" data-suffix="+">0</span><span>scholarships, continuously updated</span></div>
+        <ol class="steps">
+          <li><span class="st-ico">◎</span>All&nbsp;Results</li>
+          <li><span class="st-ico">⇄</span>Compare</li>
+          <li><span class="st-ico">◉</span>Decide</li>
+          <li><span class="st-ico">➤</span>Apply</li>
+        </ol>
+      </article>
+
+      <!-- COURSES -->
+      <article class="bcard b-courses reveal" style="--i:5">
+        <div class="bc-top"><span class="bc-tag">◍ Courses <em>Beta</em></span></div>
+        <div class="big-num"><span class="big" data-count="256">0</span><span>in the catalogue</span></div>
+        <div class="course-rows">
+          <span><i class="cdot"></i>Peer-reviewed by institutions</span>
+          <span><i class="cdot"></i>Built by teachers &amp; experts</span>
+        </div>
+      </article>
+
+      <!-- MY DRIVE -->
+      <article class="bcard b-drive reveal" style="--i:6">
+        <div class="bc-top"><span class="bc-tag">☁ My Drive</span></div>
+        <div class="gauge">
+          <svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="50" class="g-bg"/><circle cx="60" cy="60" r="50" class="g-fg" id="gaugeFg"/></svg>
+          <span class="g-label"><b>20</b>GB<small>secure · EU</small></span>
+        </div>
+        <div class="file-rows"><span>▤ LRT City Sentul.pdf</span><span>▤ Adhi Cipta.pdf</span></div>
+      </article>
+
+      <!-- NEWSROOM -->
+      <article class="bcard b-news reveal" style="--i:7">
+        <div class="bc-top"><span class="bc-tag">▦ Newsroom</span><span class="bc-live">new</span></div>
+        <h4>Bite-size context for what you study.</h4>
+        <p class="news-sub">Research, innovation and institutional insight — curated for learning, never for clicks.</p>
+        <span class="news-link">No ads · no algorithm <span class="arr">→</span></span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRUST ============ -->
+<section class="trust" id="trust" data-screen-label="Trust">
+  <div class="shell trust-grid">
+    <div class="reveal">
+      <span class="eyebrow">Trust by design</span>
+      <h2 class="h2">No ads. No profiling.<br>No hidden agenda.</h2>
+    </div>
+    <div class="trust-list">
+      <div class="treveal reveal d1"><span class="tnum">EU</span><div><h4>Built &amp; hosted in the European Union</h4><p>Privacy, security and data sovereignty by design — your data stays yours.</p></div></div>
+      <div class="treveal reveal d2"><span class="tnum">✓</span><div><h4>Verified members, encrypted messaging</h4><p>Real people, real institutions. Communication you can trust.</p></div></div>
+      <div class="treveal reveal d3"><span class="tnum">∅</span><div><h4>No third-party data sharing</h4><p>Built for learning — not for advertising or attention extraction.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BUILDING BLOCKS ============ -->
+<section class="bblocks" id="blocks" data-screen-label="Building Blocks">
+  <div class="shell bb-grid">
+    <div class="bb-copy reveal">
+      <span class="eyebrow">True modular education</span>
+      <h2 class="h2">Education, at the smallest meaningful level.</h2>
+      <p>A Building Block is a curated set of related learning elements — files, resources, assignments, lab setups and data — that together cover a specific topic.</p>
+      <p class="pull">Use a whole block, or pull the single element you need straight into your own LMS.</p>
+      <p>Teachers update and personalise materials without rebuilding a course from scratch — so learners always get content that reflects the latest knowledge and real-world practice.</p>
+    </div>
+    <div class="bb-visual reveal d2">
+      <div class="bb-board">
+        <span class="glow"></span>
+        <div class="bb-mod-grid" id="bbGrid">
+          <div class="mod tall"><span class="mt">Lecture</span><span class="mi"></span></div>
+          <div class="mod"><span class="mt">Reading</span><span class="mi"></span></div>
+          <div class="mod"><span class="mt">Quiz</span><span class="mi"></span></div>
+          <div class="mod wide"><span class="mt">Lab setup</span><span class="mi"></span></div>
+          <div class="mod"><span class="mt">Dataset</span><span class="mi"></span></div>
+          <div class="mod"><span class="mt">Video</span><span class="mi"></span></div>
+          <div class="mod"><span class="mt">Slides</span><span class="mi"></span></div>
+          <div class="mod"><span class="mt">Task</span><span class="mi"></span></div>
+          <div class="mod wide"><span class="mt">Assignment</span><span class="mi"></span></div>
+          <div class="mod"><span class="mt">Rubric</span><span class="mi"></span></div>
+        </div>
+        <span class="bb-tag">Select a whole block — or one element</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LMS BRIDGE ============ -->
+<section class="bridge" id="bridge" data-screen-label="LMS Bridge">
+  <div class="shell bridge-wrap">
+    <div class="bridge-viz reveal" id="bridgeViz">
+      <svg viewBox="0 0 460 340" id="bridgeSvg" aria-hidden="true"></svg>
+    </div>
+    <div class="bridge-copy reveal d1">
+      <span class="eyebrow">The LMS Bridge</span>
+      <h2 class="h2">Open education, across every border.</h2>
+      <p>The LMS Bridge lets teachers share courses and content across different LMS systems. Students no longer register separately at partner institutions to follow exchange programmes.</p>
+      <p class="euro">It brings the true European spirit of education to life: <em>open, connected, collaborative</em> — and built to move learners forward.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROFILE STRIP ============ -->
+<section class="profile" data-screen-label="Profile">
+  <div class="shell">
+    <div class="profile-inner reveal">
+      <div>
+        <span class="eyebrow">Your learning identity</span>
+        <h2 class="h2" style="margin-top:20px">One profile that grows with you.</h2>
+        <p>Every learner has a personal profile that grows over time — connected to courses, communities, content, events, and their professional network. It moves with you, across institutions and borders.</p>
+        <a class="btn btn-ghost" href="#join" style="margin-top:28px">Create your profile <span class="arr">→</span></a>
+      </div>
+      <div class="orbit">
+        <span class="ring r1"></span>
+        <span class="ring r2"></span>
+        <div class="orbit-spin">
+          <span class="chip" style="top:-2%;left:50%;transform:translateX(-50%)">Courses</span>
+          <span class="chip" style="top:50%;right:-8%;transform:translateY(-50%)">Communities</span>
+          <span class="chip" style="bottom:-2%;left:50%;transform:translateX(-50%)">Events</span>
+          <span class="chip" style="top:50%;left:-6%;transform:translateY(-50%)">Network</span>
+        </div>
+        <span class="core">xδ</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ QUOTE BAND ============ -->
+<section class="quote" data-screen-label="Quote">
+  <div class="quote-bg"><img src="assets/portraits/velaz.png" alt="Father José María Vélaz"></div>
+  <div class="quote-scrim"></div>
+  <div class="shell">
+    <div class="quote-content reveal">
+      <span class="eyebrow" style="margin-bottom:30px">Why we exist</span>
+      <blockquote><span class="mark">“</span>Education for the poor must not be poor education.<span class="mark">”</span></blockquote>
+      <div class="attr">
+        <span class="bar"></span>
+        <span>
+          <span class="n" style="display:block">Father José María Vélaz</span>
+          <span class="r">Founder of Fe y Alegría · a movement for the right to quality education</span>
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COLLABORATION ============ -->
+<section class="partners" id="collab" data-screen-label="Partners">
+  <div class="shell">
+    <div class="sec-head reveal" style="margin-bottom:38px">
+      <span class="eyebrow">In collaboration</span>
+      <h2 class="h2" style="margin-top:20px">Built with leading institutions across Europe.</h2>
+    </div>
+  </div>
+  <div class="marquee"><div class="marquee-track" id="ptrack"></div></div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="cta" id="join" data-screen-label="CTA">
+  <span class="glow"></span>
+  <div class="shell cta-inner reveal">
+    <span class="eyebrow center" style="justify-content:center;margin-bottom:24px">Learn · Research · Grow</span>
+    <h2>Built to move <em>learners</em> forward.</h2>
+    <p>Open, connected, collaborative. Join the European learning ecosystem where quality comes first.</p>
+    <div class="cta-actions">
+      <a class="btn btn-primary" href="#">Join Xdemia <span class="arr">→</span></a>
+      <a class="btn btn-ghost" href="#">Talk to our team</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer data-screen-label="Footer">
+  <div class="shell">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="#top"><img class="logo" src="assets/brand/logo-white.png" alt="Xdemia"></a>
+        <p>A platform built exclusively around learners — content, collaboration and communication from trusted public institutions.</p>
+        <span class="foot-eu"><span class="stars">★</span> Made &amp; hosted in the European Union</span>
+      </div>
+      <div class="foot-col">
+        <h4>Platform</h4>
+        <a href="#inside">The platform</a>
+        <a href="#blocks">Building Blocks</a>
+        <a href="#bridge">LMS Bridge</a>
+        <a href="#">Courses</a>
+      </div>
+      <div class="foot-col">
+        <h4>Community</h4>
+        <a href="#">Members</a>
+        <a href="#">Communities</a>
+        <a href="#">Events</a>
+        <a href="#">Newsroom</a>
+      </div>
+      <div class="foot-col">
+        <h4>Institutions</h4>
+        <a href="#collab">Partner with us</a>
+        <a href="#">Share content</a>
+        <a href="#trust">Privacy &amp; data</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Xdemia. Learn · Research · Grow.</span>
+      <span class="links">
+        <a href="#">Privacy</a><a href="#">Security</a><a href="#">Data sovereignty</a><a href="#">Terms</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<!-- Tweaks -->
+<div id="tweaks-root"></div>
+<script src="app.js"></script>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<script type="text/babel" src="tweaks-app.jsx"></script>
+</body>
+</html>
