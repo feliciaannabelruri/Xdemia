@@ -515,6 +515,7 @@ body.no-motion .hero-slide img{transform:none !important}
 @media(max-width:1080px){
   .nav-links{display:none}
   .burger{display:flex}
+  .nav-cta .login{display:none}
   .bb-grid,.bridge-wrap,.profile-inner,.trust-grid{grid-template-columns:1fr;gap:40px}
   .foot-grid{grid-template-columns:1fr 1fr}
   .hero{grid-template-columns:1fr;min-height:0}
@@ -546,11 +547,14 @@ body.no-motion .hero-slide img{transform:none !important}
   .foot-bottom{flex-direction:column;align-items:flex-start}
   .btn{padding:.85em 1.4em}
   /* banner mobile */
-  .banner{height:100svh;min-height:0}
-  .banner-content{padding-bottom:clamp(80px,15vh,120px)}
+  .banner{height:100svh;min-height:0;max-height:none}
+  .banner-slide img{object-position:center top;filter:grayscale(100%) contrast(1.05) brightness(.85)}
+  .banner-scrim{background:
+    linear-gradient(0deg,rgba(6,16,18,.96) 0%,rgba(6,16,18,.55) 38%,rgba(6,16,18,.25) 65%,rgba(6,16,18,.45) 100%)}
+  .banner-content{padding-bottom:clamp(100px,18vh,140px)}
   .banner-head{font-size:clamp(2.6rem,12vw,4rem)}
   .banner-lead{font-size:1rem}
-  .banner-actions{flex-direction:column;align-items:flex-start;gap:10px}
+  .banner-actions{flex-direction:column;align-items:stretch;gap:10px}
   .banner-actions .btn{width:100%;justify-content:center}
   .banner-scroll{display:none}
   /* trust */
