@@ -38,20 +38,23 @@
     <div class="banner-inner">
       <span class="eyebrow">A trusted academic network · Made in the EU</span>
       <h1 class="banner-head">
-        <span class="ln l1"><span class="t1">Learn.</span></span>
-        <span class="ln l2"><span class="t2">Research.</span></span>
-        <span class="ln l3"><span class="t3">Grow.</span></span>
+        <span class="t1">Learn.</span><span class="t2">Research.</span><span class="t3">Grow.</span>
       </h1>
       <p class="banner-lead">The social network built for learning — connecting students, teachers and researchers across Europe, in the footsteps of those who changed how the world learns.</p>
-      <div class="banner-actions">
-        <a class="btn btn-primary" href="#join">Join Xdemia free <span class="arr">→</span></a>
-        <a class="btn btn-ghost" href="#feed">See it in action</a>
-      </div>
     </div>
   </div>
   <div class="banner-figure" id="bannerFigure">
-    <span class="bar"></span>
-    <span class="who"><span class="name" id="figName"></span><span class="role" id="figRole"></span></span>
+    <div class="banner-figure-img-wrap">
+      <span class="bar"></span>
+      <span class="who"><span class="name" id="figName"></span><span class="role" id="figRole"></span></span>
+    </div>
+  </div>
+  <div class="banner-login">
+    <h3>Log in to Xdemia</h3>
+    <input type="email" placeholder="Email address" autocomplete="email">
+    <input type="password" placeholder="Password" autocomplete="current-password">
+    <a class="btn btn-primary" href="#">Log in <span class="arr">→</span></a>
+    <p class="login-foot">No account? <a href="#join">Join free</a></p>
   </div>
   <div class="banner-dots" id="bannerDots"></div>
   <div class="banner-scroll"><span>Scroll</span><span class="ln2"></span></div>
@@ -371,6 +374,47 @@
     </div>
   </div>
   <div class="marquee"><div class="marquee-track" id="ptrack"></div></div>
+</section>
+
+<!-- ============ VIDEO TILES ============ -->
+<section class="video-tiles" id="videos" data-screen-label="Videos">
+  <div class="shell">
+    <div class="sec-head reveal" style="text-align:center;margin-inline:auto">
+      <span class="eyebrow">See it in action</span>
+      <h2 class="h2" style="margin-top:16px">Watch Xdemia in action</h2>
+      <p>Discover how Xdemia helps students, teachers and researchers learn, connect and grow together.</p>
+    </div>
+    <div class="tiles-grid">
+      <div class="tile reveal d1">
+        <div class="tile-thumb">
+          <img src="assets/portraits/einstein.png" alt="What is Xdemia?">
+          <span class="play-btn"><svg viewBox="0 0 24 24" fill="currentColor" width="42" height="42"><circle cx="12" cy="12" r="12" fill="rgba(0,0,0,.5)"/><polygon points="10,8 18,12 10,16" fill="#fff"/></svg></span>
+        </div>
+        <p class="tile-label">What is Xdemia?</p>
+      </div>
+      <div class="tile reveal d2">
+        <div class="tile-thumb">
+          <img src="assets/portraits/malala.png" alt="How Communities Work">
+          <span class="play-btn"><svg viewBox="0 0 24 24" fill="currentColor" width="42" height="42"><circle cx="12" cy="12" r="12" fill="rgba(0,0,0,.5)"/><polygon points="10,8 18,12 10,16" fill="#fff"/></svg></span>
+        </div>
+        <p class="tile-label">How Communities Work</p>
+      </div>
+      <div class="tile reveal d3">
+        <div class="tile-thumb">
+          <img src="assets/portraits/mandela.png" alt="Finding Scholarships">
+          <span class="play-btn"><svg viewBox="0 0 24 24" fill="currentColor" width="42" height="42"><circle cx="12" cy="12" r="12" fill="rgba(0,0,0,.5)"/><polygon points="10,8 18,12 10,16" fill="#fff"/></svg></span>
+        </div>
+        <p class="tile-label">Finding Scholarships</p>
+      </div>
+      <div class="tile reveal d4">
+        <div class="tile-thumb">
+          <img src="assets/portraits/satyarthi.png" alt="Building Blocks Explained">
+          <span class="play-btn"><svg viewBox="0 0 24 24" fill="currentColor" width="42" height="42"><circle cx="12" cy="12" r="12" fill="rgba(0,0,0,.5)"/><polygon points="10,8 18,12 10,16" fill="#fff"/></svg></span>
+        </div>
+        <p class="tile-label">Building Blocks Explained</p>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- ============ CTA ============ -->

@@ -162,12 +162,8 @@ h1,h2,h3,h4{font-family:var(--head);font-weight:700;line-height:1.08;letter-spac
 .banner .eyebrow{background:rgba(255,255,255,.14);color:#fff;margin-bottom:24px;opacity:0;transform:translateY(14px);transition:all .8s var(--ease) .2s}
 .banner .eyebrow::before{background:var(--green)}
 .banner.in .eyebrow{opacity:1;transform:none}
-.banner-head{font-family:var(--head);font-weight:800;font-size:clamp(2.8rem,6.4vw,5.6rem);line-height:.96;letter-spacing:-.04em;color:#fff;margin-bottom:22px}
-.banner-head .ln{display:block;overflow:hidden;padding-bottom:.04em}
-.banner-head .ln span{display:block;transform:translateY(110%);transition:transform 1s var(--ease)}
-.banner.in .banner-head .ln span{transform:translateY(0)}
-.banner-head .l2 span{transition-delay:.08s}.banner-head .l3 span{transition-delay:.16s}
-.banner-head .t1{color:var(--green)}
+.banner-head{font-family:var(--head);font-weight:800;font-size:clamp(2.8rem,6.4vw,5.6rem);line-height:.96;letter-spacing:-.04em;color:#fff;margin-bottom:22px;display:flex;flex-wrap:wrap;gap:.18em;align-items:baseline}
+.banner-head .t1{color:var(--teal)}
 .banner-head .t2{color:#fff}
 .banner-head .t3{color:rgba(255,255,255,.62)}
 .banner-lead{font-size:clamp(1.05rem,1.5vw,1.32rem);color:rgba(255,255,255,.9);max-width:520px;margin-bottom:32px;opacity:0;transform:translateY(16px);transition:all .9s var(--ease) .34s}
@@ -176,13 +172,51 @@ h1,h2,h3,h4{font-family:var(--head);font-weight:700;line-height:1.08;letter-spac
 .banner.in .banner-actions{opacity:1;transform:none}
 .banner .btn-ghost{border-color:rgba(255,255,255,.5);color:#fff;background:rgba(255,255,255,.05)}
 .banner .btn-ghost:hover{background:rgba(255,255,255,.14);border-color:#fff}
-/* figure caption + dots, bottom-right */
-.banner-figure{position:absolute;right:var(--gutter);bottom:clamp(38px,6vh,64px);z-index:5;display:flex;align-items:flex-start;gap:14px;max-width:46%;text-align:left;opacity:0;transition:opacity .8s var(--ease) .6s}
+/* figure caption — LEFT side, name below image */
+.banner-figure{position:absolute;left:var(--gutter);bottom:clamp(38px,6vh,64px);z-index:5;display:flex;flex-direction:column;align-items:flex-start;gap:10px;max-width:220px;opacity:0;transition:opacity .8s var(--ease) .6s}
 .banner.in .banner-figure{opacity:1}
-.banner-figure .bar{width:24px;height:2px;background:var(--green);margin-top:9px;flex-shrink:0}
-.banner-figure .who{color:#fff}
+.banner-figure .bar{width:24px;height:2px;background:var(--green);flex-shrink:0}
+.banner-figure .who{color:#fff;margin-top:4px}
 .banner-figure .name{font-family:var(--head);font-weight:700;font-size:1.02rem;display:block;letter-spacing:-.01em}
 .banner-figure .role{font-family:var(--body);font-size:.74rem;color:rgba(255,255,255,.72);margin-top:3px;display:block}
+
+/* login modal — banner bottom-right */
+.banner-login{
+  position:absolute;right:var(--gutter);bottom:clamp(38px,6vh,64px);z-index:5;
+  background:rgba(255,255,255,.96);backdrop-filter:blur(12px);
+  border-radius:var(--r);padding:28px 28px 22px;width:300px;
+  display:flex;flex-direction:column;gap:13px;
+  box-shadow:0 24px 56px -20px rgba(8,40,45,.45);
+  opacity:0;transform:translateY(14px);transition:opacity .9s var(--ease) .5s,transform .9s var(--ease) .5s;
+}
+.banner.in .banner-login{opacity:1;transform:none}
+.banner-login h3{margin:0;font-family:var(--head);font-weight:700;font-size:1.05rem;color:var(--text)}
+.banner-login input{
+  border:1.5px solid var(--line);border-radius:10px;
+  padding:10px 14px;font-family:var(--body);font-size:.9rem;
+  color:var(--text);outline:none;transition:border-color .2s;background:#fff;
+}
+.banner-login input:focus{border-color:var(--teal)}
+.banner-login input::placeholder{color:var(--faint)}
+.banner-login .btn-primary{justify-content:center;width:100%}
+.banner-login .login-foot{font-family:var(--body);font-size:.8rem;color:var(--muted);text-align:center;margin:0}
+.banner-login .login-foot a{color:var(--teal-deep);font-weight:600}
+.banner-login .login-foot a:hover{text-decoration:underline}
+
+/* video tiles section */
+.video-tiles{padding:clamp(64px,9vh,120px) 0;background:var(--bg-soft)}
+.video-tiles .sec-head{max-width:640px;margin-inline:auto;text-align:center;margin-bottom:clamp(36px,5vw,54px)}
+.tiles-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.tile{cursor:pointer}
+.tile-thumb{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:9/12;background:#0c2329;box-shadow:var(--sh-sm);transition:box-shadow .3s var(--ease),transform .3s var(--ease)}
+.tile:hover .tile-thumb{box-shadow:var(--sh);transform:translateY(-4px)}
+.tile-thumb img{width:100%;height:100%;object-fit:cover;object-position:top center;filter:grayscale(30%) contrast(1.04);transition:filter .4s var(--ease)}
+.tile:hover .tile-thumb img{filter:grayscale(0%) contrast(1.06)}
+.play-btn{position:absolute;inset:0;display:grid;place-items:center;background:linear-gradient(0deg,rgba(6,16,18,.6) 0%,rgba(6,16,18,.1) 60%);opacity:0;transition:opacity .3s var(--ease)}
+.tile:hover .play-btn{opacity:1}
+.tile-label{margin-top:12px;font-family:var(--head);font-weight:600;font-size:.94rem;color:var(--text);padding-left:2px}
+@media(max-width:768px){.tiles-grid{grid-template-columns:repeat(2,1fr);gap:16px}}
+@media(max-width:480px){.tiles-grid{grid-template-columns:1fr;gap:16px}}
 .banner-dots{position:absolute;left:var(--gutter);bottom:clamp(38px,6vh,52px);z-index:5;display:flex;gap:8px}
 .banner-dots button{width:26px;height:3px;background:rgba(255,255,255,.3);border-radius:2px;overflow:hidden;position:relative;cursor:pointer}
 .banner-dots button .fill{position:absolute;inset:0;width:0;background:var(--green)}
@@ -552,10 +586,10 @@ body.no-motion .hero-slide img{transform:none !important}
   .banner-scrim{background:
     linear-gradient(0deg,rgba(6,16,18,.96) 0%,rgba(6,16,18,.55) 38%,rgba(6,16,18,.25) 65%,rgba(6,16,18,.45) 100%)}
   .banner-content{padding-bottom:clamp(100px,18vh,140px)}
-  .banner-head{font-size:clamp(2.6rem,12vw,4rem)}
+  .banner-head{font-size:clamp(2.6rem,12vw,4rem);flex-wrap:wrap;gap:.12em}
   .banner-lead{font-size:1rem}
-  .banner-actions{flex-direction:column;align-items:stretch;gap:10px}
-  .banner-actions .btn{width:100%;justify-content:center}
+  .banner-figure{display:none}
+  .banner-login{display:none}
   .banner-scroll{display:none}
   /* trust */
   .trust{padding:clamp(48px,7vh,80px) 0}
