@@ -152,33 +152,36 @@ h1,h2,h3,h4{font-family:var(--head);font-weight:700;line-height:1.08;letter-spac
 .banner-stage{position:absolute;inset:0}
 .banner-slide{position:absolute;inset:0;opacity:0;transition:opacity 1.4s var(--ease)}
 .banner-slide.active{opacity:1}
-.banner-slide img{width:100%;height:100%;object-fit:cover;object-position:center 22%;filter:grayscale(100%) contrast(1.05) brightness(.96);transform:scale(1.07);transition:transform 8s linear}
+/* Image anchored LEFT so person is visible on the left side */
+.banner-slide img{width:100%;height:100%;object-fit:cover;object-position:30% center;filter:grayscale(100%) contrast(1.05) brightness(.88);transform:scale(1.07);transition:transform 8s linear}
 .banner-slide.active img{transform:scale(1)}
+/* Scrim: dark bottom + dark on RIGHT so login card is readable; left stays visible for portrait */
 .banner-scrim{position:absolute;inset:0;z-index:2;background:
-  linear-gradient(0deg,rgba(6,16,18,.94) 2%,rgba(6,16,18,.34) 40%,rgba(6,16,18,.12) 70%,rgba(6,16,18,.4) 100%),
-  linear-gradient(90deg,rgba(6,16,18,.78) 0%,rgba(6,16,18,.15) 45%,transparent 72%)}
+  linear-gradient(0deg,rgba(6,16,18,.96) 0%,rgba(6,16,18,.52) 35%,rgba(6,16,18,.12) 68%,rgba(6,16,18,.3) 100%),
+  linear-gradient(270deg,rgba(6,16,18,.82) 0%,rgba(6,16,18,.38) 38%,transparent 62%)}
+/* Content: text anchored bottom-left */
 .banner-content{position:relative;z-index:4;height:100%;max-width:var(--maxw);margin:0 auto;padding:0 var(--gutter) clamp(70px,11vh,120px);display:flex;flex-direction:column;justify-content:flex-end}
-.banner-inner{max-width:680px}
+.banner-inner{max-width:560px}
 .banner .eyebrow{background:rgba(255,255,255,.14);color:#fff;margin-bottom:24px;opacity:0;transform:translateY(14px);transition:all .8s var(--ease) .2s}
 .banner .eyebrow::before{background:var(--green)}
 .banner.in .eyebrow{opacity:1;transform:none}
-.banner-head{font-family:var(--head);font-weight:800;font-size:clamp(2.8rem,6.4vw,5.6rem);line-height:.96;letter-spacing:-.04em;color:#fff;margin-bottom:22px;display:flex;flex-wrap:wrap;gap:.18em;align-items:baseline}
+.banner-head{font-family:var(--head);font-weight:800;font-size:clamp(2.2rem,4.8vw,4.4rem);line-height:1;letter-spacing:-.03em;color:#fff;margin-bottom:22px;display:flex;flex-wrap:nowrap;gap:.18em;align-items:baseline;white-space:nowrap}
 .banner-head .t1{color:var(--teal)}
 .banner-head .t2{color:#fff}
-.banner-head .t3{color:rgba(255,255,255,.62)}
+.banner-head .t3{color:rgba(255,255,255,.7)}
 .banner-lead{font-size:clamp(1.05rem,1.5vw,1.32rem);color:rgba(255,255,255,.9);max-width:520px;margin-bottom:32px;opacity:0;transform:translateY(16px);transition:all .9s var(--ease) .34s}
 .banner.in .banner-lead{opacity:1;transform:none}
 .banner-actions{display:flex;gap:13px;flex-wrap:wrap;opacity:0;transform:translateY(16px);transition:all .9s var(--ease) .46s}
 .banner.in .banner-actions{opacity:1;transform:none}
 .banner .btn-ghost{border-color:rgba(255,255,255,.5);color:#fff;background:rgba(255,255,255,.05)}
 .banner .btn-ghost:hover{background:rgba(255,255,255,.14);border-color:#fff}
-/* figure caption — LEFT side, name below image */
-.banner-figure{position:absolute;left:var(--gutter);bottom:clamp(38px,6vh,64px);z-index:5;display:flex;flex-direction:column;align-items:flex-start;gap:10px;max-width:220px;opacity:0;transition:opacity .8s var(--ease) .6s}
+/* figure caption — bottom-LEFT, name below bar, synced with portrait position */
+.banner-figure{position:absolute;left:var(--gutter);bottom:clamp(38px,6vh,64px);z-index:5;display:flex;flex-direction:column;align-items:flex-start;gap:8px;max-width:260px;opacity:0;transition:opacity .8s var(--ease) .6s}
 .banner.in .banner-figure{opacity:1}
-.banner-figure .bar{width:24px;height:2px;background:var(--green);flex-shrink:0}
-.banner-figure .who{color:#fff;margin-top:4px}
-.banner-figure .name{font-family:var(--head);font-weight:700;font-size:1.02rem;display:block;letter-spacing:-.01em}
-.banner-figure .role{font-family:var(--body);font-size:.74rem;color:rgba(255,255,255,.72);margin-top:3px;display:block}
+.banner-figure .bar{width:28px;height:2px;background:var(--green);flex-shrink:0}
+.banner-figure .who{color:#fff}
+.banner-figure .name{font-family:var(--head);font-weight:700;font-size:1rem;display:block;letter-spacing:-.01em}
+.banner-figure .role{font-family:var(--body);font-size:.74rem;color:rgba(255,255,255,.68);margin-top:2px;display:block}
 
 /* login modal — banner bottom-right — matches PDF Sign in form */
 .banner-login{
@@ -214,27 +217,36 @@ h1,h2,h3,h4{font-family:var(--head);font-weight:700;line-height:1.08;letter-spac
 .dl-btn:hover{border-color:var(--teal);color:var(--teal)}
 
 /* =========================================================
-   FEATURE TILES — 4 colored cards (replaces CTA)
+   FEATURE TILES — 4 colored cards (replaces CTA) — Xdemia brand palette
    ========================================================= */
-.video-tiles{padding:clamp(48px,7vh,96px) 0;background:#fff}
+.video-tiles{padding:clamp(48px,7vh,96px) 0;background:var(--bg-soft)}
 .tiles-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
 .tile{border-radius:var(--r);padding:clamp(24px,3vw,36px) clamp(20px,2.4vw,28px);display:flex;flex-direction:column;gap:18px;transition:transform .3s var(--ease),box-shadow .3s var(--ease)}
-.tile:hover{transform:translateY(-5px);box-shadow:0 20px 44px -18px rgba(8,40,45,.22)}
-.tile-icon{width:46px;height:46px;border-radius:12px;display:grid;place-items:center;background:rgba(255,255,255,.22)}
-.tile h3{font-family:var(--head);font-weight:700;font-size:1.14rem;line-height:1.22;letter-spacing:-.01em}
-.tile p{font-family:var(--body);font-size:.9rem;line-height:1.56;opacity:.88}
-/* Tile 1 — soft sage/mint */
-.tile-1{background:#e8ede6;color:#1e2e1a}
-.tile-1 .tile-icon{background:rgba(30,46,26,.12)}
-/* Tile 2 — deep navy */
-.tile-2{background:#1e3048;color:#fff}
-.tile-2 .tile-icon{background:rgba(255,255,255,.15)}
-/* Tile 3 — warm yellow */
-.tile-3{background:#f5e9c0;color:#3a2e0a}
-.tile-3 .tile-icon{background:rgba(58,46,10,.12)}
-/* Tile 4 — forest green */
-.tile-4{background:#1e4832;color:#fff}
-.tile-4 .tile-icon{background:rgba(255,255,255,.15)}
+.tile:hover{transform:translateY(-5px);box-shadow:0 20px 44px -18px rgba(8,40,45,.28)}
+.tile-icon{width:48px;height:48px;border-radius:12px;display:grid;place-items:center}
+.tile h3{font-family:var(--head);font-weight:700;font-size:1.12rem;line-height:1.22;letter-spacing:-.01em}
+.tile p{font-family:var(--body);font-size:.88rem;line-height:1.58;opacity:.86}
+
+/* Tile 1 — light teal wash (bg-soft) */
+.tile-1{background:#e2f0f1;color:var(--text)}
+.tile-1 .tile-icon{background:rgba(8,136,152,.14);color:var(--teal-deep)}
+
+/* Tile 2 — Xdemia teal (brand primary) */
+.tile-2{background:var(--teal);color:#fff}
+.tile-2 .tile-icon{background:rgba(255,255,255,.18);color:#fff}
+.tile-2 h3{color:#fff}
+.tile-2 p{color:rgba(255,255,255,.88);opacity:1}
+
+/* Tile 3 — light green tint */
+.tile-3{background:#e8f6ee;color:var(--text)}
+.tile-3 .tile-icon{background:rgba(77,186,135,.18);color:var(--green-deep)}
+
+/* Tile 4 — deep teal night (dark brand) */
+.tile-4{background:var(--night);color:#fff}
+.tile-4 .tile-icon{background:rgba(255,255,255,.14);color:var(--green)}
+.tile-4 h3{color:#fff}
+.tile-4 p{color:rgba(255,255,255,.82);opacity:1}
+
 @media(max-width:900px){.tiles-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:540px){.tiles-grid{grid-template-columns:1fr}}
 .banner-dots{position:absolute;left:var(--gutter);bottom:clamp(38px,6vh,52px);z-index:5;display:flex;gap:8px}
@@ -606,7 +618,7 @@ body.no-motion .hero-slide img{transform:none !important}
   .banner-scrim{background:
     linear-gradient(0deg,rgba(6,16,18,.96) 0%,rgba(6,16,18,.55) 38%,rgba(6,16,18,.25) 65%,rgba(6,16,18,.45) 100%)}
   .banner-content{padding-bottom:clamp(100px,18vh,140px)}
-  .banner-head{font-size:clamp(2.6rem,12vw,4rem);flex-wrap:wrap;gap:.12em}
+  .banner-head{font-size:clamp(1.6rem,7.5vw,2.4rem);white-space:nowrap;gap:.12em}
   .banner-lead{font-size:1rem}
   .banner-figure{display:none}
   .banner-login{display:none}
