@@ -159,18 +159,21 @@ h1,h2,h3,h4{font-family:var(--head);font-weight:700;line-height:1.08;letter-spac
 .banner-scrim{position:absolute;inset:0;z-index:2;background:
   linear-gradient(0deg,rgba(6,16,18,.96) 0%,rgba(6,16,18,.52) 35%,rgba(6,16,18,.12) 68%,rgba(6,16,18,.3) 100%),
   linear-gradient(270deg,rgba(6,16,18,.82) 0%,rgba(6,16,18,.38) 38%,transparent 62%)}
-/* Content: text anchored bottom-left */
-.banner-content{position:relative;z-index:4;height:100%;max-width:var(--maxw);margin:0 auto;padding:0 var(--gutter) clamp(70px,11vh,120px);display:flex;flex-direction:column;justify-content:flex-end}
-.banner-inner{max-width:560px}
+/* Content: anchored to the TOP so neither the headline nor the sign-in
+   column ever sits over the portrait's face — only the dark area above
+   the shoulders is used. */
+.banner-content{position:relative;z-index:4;height:100%;max-width:var(--maxw);margin:0 auto;padding:clamp(60px,10vh,104px) var(--gutter) 0;display:flex;flex-direction:column;justify-content:flex-start}
+/* Two-column row: headline on the left, sign-in + blurb stacked on the right */
+.banner-grid{display:flex;align-items:flex-start;justify-content:space-between;gap:48px;width:100%}
+.banner-inner{max-width:520px;padding-top:6px}
 .banner .eyebrow{background:rgba(255,255,255,.14);color:#fff;margin-bottom:24px;opacity:0;transform:translateY(14px);transition:all .8s var(--ease) .2s}
 .banner .eyebrow::before{background:var(--green)}
 .banner.in .eyebrow{opacity:1;transform:none}
-.banner-head{font-family:var(--head);font-weight:800;font-size:clamp(2.2rem,4.8vw,4.4rem);line-height:1;letter-spacing:-.03em;color:#fff;margin-bottom:22px;display:flex;flex-wrap:nowrap;gap:.18em;align-items:baseline;white-space:nowrap}
+.banner-head{font-family:var(--head);font-weight:800;font-size:clamp(2.2rem,4.8vw,4.4rem);line-height:1;letter-spacing:-.03em;color:#fff;margin-bottom:0;display:flex;flex-wrap:nowrap;gap:.18em;align-items:baseline;white-space:nowrap;opacity:0;transform:translateY(14px);transition:all .9s var(--ease) .3s}
+.banner.in .banner-head{opacity:1;transform:none}
 .banner-head .t1{color:var(--teal)}
 .banner-head .t2{color:#fff}
 .banner-head .t3{color:rgba(255,255,255,.7)}
-.banner-lead{font-size:clamp(1.05rem,1.5vw,1.32rem);color:rgba(255,255,255,.9);max-width:520px;margin-bottom:32px;opacity:0;transform:translateY(16px);transition:all .9s var(--ease) .34s}
-.banner.in .banner-lead{opacity:1;transform:none}
 .banner-actions{display:flex;gap:13px;flex-wrap:wrap;opacity:0;transform:translateY(16px);transition:all .9s var(--ease) .46s}
 .banner.in .banner-actions{opacity:1;transform:none}
 .banner .btn-ghost{border-color:rgba(255,255,255,.5);color:#fff;background:rgba(255,255,255,.05)}
@@ -183,14 +186,21 @@ h1,h2,h3,h4{font-family:var(--head);font-weight:700;line-height:1.08;letter-spac
 .banner-figure .name{font-family:var(--head);font-weight:700;font-size:1rem;display:block;letter-spacing:-.01em}
 .banner-figure .role{font-family:var(--body);font-size:.74rem;color:rgba(255,255,255,.68);margin-top:2px;display:block}
 
-/* login modal — banner bottom-right — matches PDF Sign in form */
+/* Right column — sign-in card sits ABOVE the descriptive blurb, both
+   pinned to the top-right (clear of the face), stacked with one shared
+   width so they read as a single column. */
+.banner-side{display:flex;flex-direction:column;gap:18px;width:300px;flex-shrink:0}
+.banner-lead{font-size:.97rem;line-height:1.6;color:rgba(255,255,255,.92);opacity:0;transform:translateY(14px);transition:all .9s var(--ease) .56s}
+.banner.in .banner-lead{opacity:1;transform:none}
+
+/* login card — matches PDF Sign in form, now part of the top-right stack */
 .banner-login{
-  position:absolute;right:var(--gutter);bottom:clamp(38px,6vh,64px);z-index:5;
+  position:relative;z-index:5;
   background:#fff;
-  border-radius:var(--r-sm);padding:22px 24px 18px;width:290px;
+  border-radius:var(--r-sm);padding:22px 24px 18px;width:100%;
   display:flex;flex-direction:column;gap:12px;
   box-shadow:0 24px 56px -20px rgba(8,40,45,.45);
-  opacity:0;transform:translateY(14px);transition:opacity .9s var(--ease) .5s,transform .9s var(--ease) .5s;
+  opacity:0;transform:translateY(14px);transition:opacity .9s var(--ease) .42s,transform .9s var(--ease) .42s;
 }
 .banner.in .banner-login{opacity:1;transform:none}
 .banner-login h3{margin:0;font-family:var(--head);font-weight:700;font-size:1.05rem;color:var(--text)}
@@ -616,8 +626,11 @@ body.no-motion .hero-slide img{transform:none !important}
   .banner-slide img{object-position:center top;filter:grayscale(100%) contrast(1.05) brightness(.85)}
   .banner-scrim{background:
     linear-gradient(0deg,rgba(6,16,18,.96) 0%,rgba(6,16,18,.55) 38%,rgba(6,16,18,.25) 65%,rgba(6,16,18,.45) 100%)}
-  .banner-content{padding-bottom:clamp(100px,18vh,140px)}
+  .banner-content{padding:0 var(--gutter) clamp(100px,18vh,140px);justify-content:flex-end}
+  .banner-grid{flex-direction:column;gap:14px}
+  .banner-inner{max-width:none;padding-top:0}
   .banner-head{font-size:clamp(1.6rem,7.5vw,2.4rem);white-space:nowrap;gap:.12em}
+  .banner-side{width:100%}
   .banner-lead{font-size:1rem}
   .banner-figure{display:none}
   .banner-login{display:none}
