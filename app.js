@@ -5,12 +5,12 @@
   /* ---------- BANNER: rotating portrait slideshow ---------- */
   const SLIDES = [
     { img: 'assets/portraits/malala.png',       name: 'Malala Yousafzai',   role: 'Nobel Peace Prize · education activist' },
-    { img: 'assets/portraits/mandela.png',      name: 'Nelson Mandela',     role: '“Education is the most powerful weapon.”' },
+    { img: 'assets/portraits/mandela.png',      name: 'Nelson Mandela',     flip: true,     role: '“Education is the most powerful weapon.”' },
     { img: 'assets/portraits/einstein.png',     name: 'Albert Einstein',    role: 'Theoretical physicist · 1879–1955' },
     { img: 'assets/portraits/comenius.png',     name: 'Jan Amos Comenius',  role: 'Father of modern education' },
     { img: 'assets/portraits/satyarthi.png',    name: 'Kailash Satyarthi',  role: 'Nobel Peace Prize · child’s right to learn' },
-    { img: 'assets/portraits/velaz.png',        name: 'José María Vélaz',   role: 'Founder of Fe y Alegría' },
-    { img: 'assets/portraits/plato.png',        name: 'Plato',              role: 'Founder of the Academy · c. 387 BC' },
+    { img: 'assets/portraits/velaz.png',        flip: true, name: 'José María Vélaz',   role: 'Founder of Fe y Alegría' },
+    { img: 'assets/portraits/plato.png',        name: 'Plato',              flip: true,              role: 'Founder of the Academy · c. 387 BC' },
     { img: 'assets/portraits/einstein-old.png', name: 'Albert Einstein',    role: '“The training of the mind to think.”' },
   ];
   const DURATION = 6000;
@@ -25,6 +25,7 @@
       slide.className = 'banner-slide';
       const im = document.createElement('img');
       im.src = s.img; im.alt = s.name; im.loading = i === 0 ? 'eager' : 'lazy';
+      if (s.flip) im.style.transform = 'scaleX(-1)';
       slide.appendChild(im); bStage.appendChild(slide);
       const dot = document.createElement('button');
       dot.setAttribute('aria-label', 'Show ' + s.name);

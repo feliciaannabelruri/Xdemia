@@ -149,17 +149,15 @@ h1,h2,h3,h4{font-family:var(--head);font-weight:700;line-height:1.08;letter-spac
 /* Image anchored LEFT so person is visible on the left side */
 .banner-slide img{width:100%;height:100%;object-fit:cover;object-position:left center;filter:grayscale(100%) contrast(1.05) brightness(.88);transform:scale(1.07);transition:transform 8s linear}
 .banner-slide.active img{transform:scale(1)}
-/* Scrim: dark bottom + dark on RIGHT so login card is readable; left stays visible for portrait */
+/* Scrim: dark ONLY on right side (login) and bottom — left clear for portrait face */
 .banner-scrim{position:absolute;inset:0;z-index:2;background:
-  linear-gradient(0deg,rgba(6,16,18,.96) 0%,rgba(6,16,18,.52) 35%,rgba(6,16,18,.12) 68%,rgba(6,16,18,.3) 100%),
-  linear-gradient(270deg,rgba(6,16,18,.82) 0%,rgba(6,16,18,.38) 38%,transparent 62%)}
-/* Content: anchored to the TOP so neither the headline nor the sign-in
-   column ever sits over the portrait's face — only the dark area above
-   the shoulders is used. */
-.banner-content{position:relative;z-index:4;height:100%;max-width:var(--maxw);margin:0 auto;padding:clamp(60px,10vh,104px) var(--gutter) 0;display:flex;flex-direction:column;justify-content:flex-start}
-/* Two-column row: headline on the left, sign-in + blurb stacked on the right */
-.banner-grid{display:flex;align-items:flex-start;justify-content:space-between;gap:48px;width:100%}
-.banner-inner{max-width:520px;padding-top:6px}
+  linear-gradient(0deg,rgba(6,16,18,.90) 0%,rgba(6,16,18,.28) 26%,rgba(6,16,18,.04) 52%,transparent 100%),
+  linear-gradient(270deg,rgba(6,16,18,.88) 0%,rgba(6,16,18,.55) 28%,rgba(6,16,18,.08) 50%,transparent 65%)}
+/* Content: thin strip at TOP — headline top-left, login top-right, portrait fills center */
+.banner-content{position:relative;z-index:4;height:100%;max-width:var(--maxw);margin:0 auto;padding:clamp(48px,8vh,80px) var(--gutter) 0;display:flex;flex-direction:column;justify-content:flex-start}
+/* Two-column row: headline left (compact), sign-in right */
+.banner-grid{display:flex;align-items:flex-start;justify-content:space-between;gap:40px;width:100%}
+.banner-inner{max-width:380px;padding-top:6px;flex-shrink:0}
 .banner .eyebrow{background:rgba(255,255,255,.14);color:#fff;margin-bottom:24px;opacity:0;transform:translateY(14px);transition:all .8s var(--ease) .2s}
 .banner .eyebrow::before{background:var(--green)}
 .banner.in .eyebrow{opacity:1;transform:none}
