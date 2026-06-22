@@ -1,9 +1,3 @@
-/* ============================================================
-   XDEMIA — on-brand redesign (matches xdemia.com)
-   Brockmann→Plus Jakarta Sans (headings) + Poppins (body)
-   Brand teal #088898 · green accent #4DBA87 · light, friendly, modern
-   ============================================================ */
-
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root{
@@ -153,7 +147,7 @@ h1,h2,h3,h4{font-family:var(--head);font-weight:700;line-height:1.08;letter-spac
 .banner-slide{position:absolute;inset:0;opacity:0;transition:opacity 1.4s var(--ease)}
 .banner-slide.active{opacity:1}
 /* Image anchored LEFT so person is visible on the left side */
-.banner-slide img{width:100%;height:100%;object-fit:cover;object-position:30% center;filter:grayscale(100%) contrast(1.05) brightness(.88);transform:scale(1.07);transition:transform 8s linear}
+.banner-slide img{width:100%;height:100%;object-fit:cover;object-position:left center;filter:grayscale(100%) contrast(1.05) brightness(.88);transform:scale(1.07);transition:transform 8s linear}
 .banner-slide.active img{transform:scale(1)}
 /* Scrim: dark bottom + dark on RIGHT so login card is readable; left stays visible for portrait */
 .banner-scrim{position:absolute;inset:0;z-index:2;background:
