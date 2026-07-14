@@ -282,7 +282,7 @@ h1,h2,h3,h4{font-family:var(--head);font-weight:700;line-height:1.08;letter-spac
    STAT BAND
    ========================================================= */
 .statband{background:var(--teal);padding:clamp(28px,4vw,44px) 0}
-.statband-inner{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.statband-inner{display:grid;grid-template-columns:repeat(3,1fr);max-width:720px;margin-inline:auto;gap:24px}
 .statband .sb{text-align:center;color:#fff;position:relative}
 .statband .sb:not(:last-child)::after{content:"";position:absolute;right:-12px;top:14%;height:72%;width:1px;background:rgba(255,255,255,.2)}
 .statband .n{font-family:var(--head);font-weight:800;font-size:clamp(2rem,3.4vw,2.9rem);line-height:1;letter-spacing:-.02em;display:block}
@@ -603,8 +603,8 @@ body.no-motion .hero-slide img{transform:none !important}
 }
 @media(max-width:640px){
   :root{--gutter:18px}
-  .statband-inner{grid-template-columns:1fr 1fr;gap:22px 12px}
-  .statband .sb:nth-child(2)::after{display:none}
+  .statband-inner{grid-template-columns:repeat(3,1fr);gap:12px;max-width:100%}
+  .statband .n{font-size:1.6rem}
   .hero-head{font-size:clamp(2.9rem,14vw,4.4rem)}
   .hero-stats .n{font-size:1.6rem}
   .bento{grid-template-columns:1fr}
